@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'franklin-gothic-urw', 'FranklinGothic URW', 'Helvetica Neue', Helvetica, arial; }
+  font-family: 'Karla', 'franklin-gothic-urw', 'FranklinGothic URW', 'Helvetica Neue', Helvetica, arial; }
 
 .row {
   display: block;
@@ -132,6 +132,8 @@ body {
   float: none;
   margin: 0 auto; }
 
+  .right { float:right;}
+
 body.influences img {
   margin-bottom:20px;
 }
@@ -166,18 +168,17 @@ h1, h2, h3, h4 {
     padding: 9px 40px;
     color: #cfcfcf; }
 
-body {
-  border-top: 5px solid #27262C; }
 
 .aboutcarl .col-9 {
   padding-top: 30px;
 
-  -webkit-column-count: 2;
+  /*-webkit-column-count: 2;*/
   /* Chrome, Safari, Opera */
-  -moz-column-count: 2;
+  /*-moz-column-count: 2;*/
   /* Firefox */
-  column-count: 2;
-  column-gap: 10px; }
+  /*column-count: 2;*/
+  /*column-gap: 10px;*/
+  }
   .aboutcarl .col-9 p:first-of-type {
     padding-top: 0 !important;
     margin-top: 0; }
@@ -215,13 +216,28 @@ body {
 .workexamp a {
   padding: 2px; }
 .workexamp img {
-  width: 100%;
-  border: 1px solid #CFCFCF; }
+  width: 100%;}
 .workexamp .gallery .col-4 {
   width: 31%;
   margin: 1%; }
 
+header {
+  background:#F7F7F7;
+  padding-top:123px;
+}
+
+header nav {
+  border-top:5px solid yellow;
+  opacity:0.95;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 9999;
+}
+
 header nav, footer nav {
+  background:#FFFFFF;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #FFF; }
@@ -248,10 +264,15 @@ header h1, footer h1 {
   font-size: 60px;
   line-height:1;
   text-align: leftt; }
+  header h1 {
+    line-height: 1.4;
+    font-size: 1.5em;
+  }
 header p, footer p {
-  margin-top: 250px;
+  margin-top: 0px;
   font-size: 20px;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+color:#989898;}
 
 footer p {
   margin-top: 50px;
@@ -294,6 +315,8 @@ section.work {
   section.work h2 {
     border-bottom: 1px solid #f2f2f2; }
 
+
+
 section.contact {
   text-align: center;
   background: #fff;
@@ -326,7 +349,8 @@ footer {
     padding-bottom: 0; }
 
 section.info {
-  margin-top: 130px; }
+  background:#FFF;
+  padding-top: 130px; }
   section.info h2 {
     border-bottom: 1px solid #cfcfcf;
     text-align: right;
@@ -345,6 +369,95 @@ section.info {
 
 body.about header p {
   width: 70%; }
+
+
+.work-thumb {
+  position: relative;
+  margin-bottom:40px;
+  margin-right:20px;
+}
+
+.work-thumb .proj-desc{
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  padding-left:20%;
+  padding-top:40%;
+  background:rgba(255,255,0,0);
+  transition:background 0.2s ease-in-out;
+}
+
+.work-thumb .proj-desc p {
+  opacity:0;
+  transition:opacity:0.3s ease-in-out;
+}
+
+.work-thumb .proj-desc:hover{
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  opacity:1;
+  background:rgba(255,255,0,0.85);
+}
+
+.work-thumb .proj-desc:hover p {
+  opacity: 1
+}
+
+.work-thumb .proj-desc p {
+  padding-right:40px;
+  padding-left:40px;
+  padding-top:40px!important;
+  padding-bottom:40px;
+  font-size:21px;
+  color:#222;
+  background:#FFF;
+}
+
+.work-thumb:img {
+  position: relative;
+}
+
+.work-thumb:hover img:after {
+  position: absolute;
+  background:yellow;
+  content:'';
+  opacity:0.8;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.proj-info {
+  transition:all 0.25s ease-in-out;
+  width:85%;
+  float:right;
+  color:#222;
+  bottom:12px;
+  right:12px;
+  left:12px;
+  padding-left: 12px
+}
+
+.proj-info a {
+  color:black;
+}
+
+.proj-info h3 {
+  margin-bottom:0;
+  font-size:17px;
+}
+
+.proj-info p {
+  font-family:monospace;
+  margin-top:3px;
+  padding:0 !important;
+}
 
 body.work section.work {
   padding: 0; }
@@ -576,6 +689,10 @@ background: rgb(29, 213, 150);
   .main-links {
     text-align: right;
   }
+
+  .main-links div {
+margin-left: 15px;
+}
   .workexamp .gallery .sma-col-6 {
     width: 48%; }
 
@@ -600,6 +717,7 @@ background: rgb(29, 213, 150);
   header h1 {
     margin-top: 30px;
     line-height: 45px;
+    margin-bottom:20px;
     line-height: 1.3;
     float: left; }
 
@@ -627,3 +745,10 @@ background: rgb(29, 213, 150);
       left:-15px;
     }
 
+.work-ex {
+  margin-bottom:40px;
+}
+
+section.contactme {
+  background:yellow;
+}
