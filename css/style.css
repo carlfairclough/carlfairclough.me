@@ -9,7 +9,7 @@ body {
 .row {
   display: block;
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1340px;
   overflow: hidden; }
 
 /* line 60, ../scss/partials/_grid.scss */
@@ -229,7 +229,7 @@ header {
 header nav {
   border-top:5px solid yellow;
   opacity:0.95;
-  position: fixed;
+  position: absolute;
   top:0;
   left:0;
   right:0;
@@ -751,4 +751,52 @@ margin-left: 15px;
 
 section.contactme {
   background:yellow;
+}
+
+.instagram {
+  display:block;
+  overflow: hidden;
+}
+.instagram img {
+  width:20%;
+  float: left;
+  margin-bottom: 120px;
+}
+
+
+/* TIMETASTIC */
+
+body.timetastic header {
+  background:url(https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?q=75&fm=jpg&s=c5f2b3df2a4c71532b3b354b8766503c);
+  background-size:cover;
+}
+
+body.timetastic .project-description {
+  padding-bottom: 120px;
+}
+
+.imgCaption {
+  font-size:15px;
+}
+
+.imgCaption p {
+  width:100%;
+  max-width: 250px;
+  float: right;
+  color:#989898;
+}
+
+.imgCaption p:first-of-type {
+  margin-top:0;
+  border-top:1px solid #cfcfcf;
+}
+
+.imgCaption p:last-of-type {
+  margin-top:0;
+  border-bottom:1px solid #cfcfcf;
+  padding-bottom:15px;
+}
+
+body.timetastic img {
+  margin-bottom:15px;
 }
