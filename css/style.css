@@ -383,8 +383,7 @@ body.about header p {
   right:0;
   top:0;
   bottom:0;
-  padding-left:20%;
-  padding-top:40%;
+  padding-left:0%;
   background:rgba(255,255,0,0);
   transition:background 0.2s ease-in-out;
 }
@@ -401,7 +400,7 @@ body.about header p {
   top:0;
   bottom:0;
   opacity:1;
-  background:rgba(255,255,0,0.85);
+  background:rgba(255, 228, 69, 0.95);
 }
 
 .work-thumb .proj-desc:hover p {
@@ -415,7 +414,7 @@ body.about header p {
   padding-bottom:40px;
   font-size:21px;
   color:#222;
-  background:#FFF;
+  margin-top:0;
 }
 
 .work-thumb:img {
@@ -806,6 +805,10 @@ body.project-body .project-description {
 
 body.project-body img {
   margin-bottom:15px;
+}
+
+body.project-body section.info h2 {
+  margin-right:0;
 }
 
 .screenshot-wrap {
