@@ -767,8 +767,9 @@ section.contactme {
 /* TIMETASTIC */
 
 body.timetastic header {
-  background:url(https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?q=75&fm=jpg&s=c5f2b3df2a4c71532b3b354b8766503c);
-  background-size:cover;
+background: url(https://farm6.staticflickr.com/5442/9039430983_976bee3a61_k_d.jpg);
+background-size: cover;
+background-position: center;
 }
 
 body.timetastic .project-description {
@@ -799,4 +800,28 @@ body.timetastic .project-description {
 
 body.timetastic img {
   margin-bottom:15px;
+}
+
+.screenshot-wrap {
+  position:relative;
+}
+
+.mask {
+  position: relative;
+  z-index: 60;
+}
+
+.act-img {
+  z-index: 50;
+  position:absolute;
+  top:0;
+  bottom:15px;
+  left:10px;
+  right:10px;
+  overflow: hidden;
+}
+
+.act-img.laptop img {
+   margin-left: 22%;
+    margin-top: 9%;
 }
