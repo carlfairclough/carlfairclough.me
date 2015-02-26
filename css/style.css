@@ -227,7 +227,7 @@ header {
 }
 
 header nav {
-  border-top:5px solid yellow;
+  border-top:5px solid #ffe445;
   opacity:0.95;
   position: absolute;
   top:0;
@@ -424,7 +424,7 @@ body.about header p {
 
 .work-thumb:hover img:after {
   position: absolute;
-  background:yellow;
+  background:#ffe445;
   content:'';
   opacity:0.8;
   top:0;
@@ -750,7 +750,7 @@ margin-left: 15px;
 }
 
 section.contactme {
-  background:yellow;
+  background:#ffe445;
 }
 
 .instagram {
