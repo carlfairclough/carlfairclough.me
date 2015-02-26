@@ -772,7 +772,13 @@ background-size: cover;
 background-position: center;
 }
 
-body.timetastic .project-description {
+body.formisimo header {
+  background: url(../img/formisimo/wireframes.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+body.project-body .project-description {
   padding-bottom: 120px;
 }
 
@@ -798,7 +804,7 @@ body.timetastic .project-description {
   padding-bottom:15px;
 }
 
-body.timetastic img {
+body.project-body img {
   margin-bottom:15px;
 }
 
@@ -824,4 +830,10 @@ body.timetastic img {
 .act-img.laptop img {
    margin-left: 22%;
     margin-top: 9%;
+}
+
+
+.act-img.desktop {
+  padding-left: 22.5%;
+  padding-top: 10.5%;
 }
