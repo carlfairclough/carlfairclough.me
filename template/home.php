@@ -15,7 +15,7 @@
                                 </figcaption>
                             </figure>
                             <h3>Timetastic</h3>
-                            <p>UX, UI, front-end dev</p>
+                            <p>UX, UI, App Design, Front-end dev</p>
                         </a>
 
                         <a class="col-6 med-col-12 work-ex" href="project/textburst">
@@ -26,7 +26,7 @@
                                 </figcaption>
                             </figure>
                             <h3>Textburst</h3>
-                            <p>UX, UI, front-end dev</p>
+                            <p>UX, UI, Conceptualisation, Front-end dev</p>
                         </a>
                     </div>
                     <div class="row">
@@ -39,7 +39,7 @@
                                 </figcaption>
                             </figure>
                             <h3>Formisimo</h3>
-                            <p>UX, UI, front-end dev</p>
+                            <p>UX, UI, Front-end dev</p>
                         </a>
 
                          <a class="col-6 med-col-12 work-ex" href="project/champio">
@@ -50,7 +50,7 @@
                                 </figcaption>
                             </figure>
                             <h3>Champio</h3>
-                            <p>UX, UI, front-end dev</p>
+                            <p>UX, UI, App Design</p>
                         </a>
                         
                     </div>
