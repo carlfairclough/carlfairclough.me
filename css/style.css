@@ -946,7 +946,15 @@ footer h1 + p {
   opacity: 0.7;
   text-align: left;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
+}
+
+.email-me {
+  opacity: 1;
+  color: #222;
+  cursor: pointer;
+  margin-top: 15px;
+  display: block;
 }
 
 .button {

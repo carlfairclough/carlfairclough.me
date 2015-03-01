@@ -3,8 +3,9 @@
             <div class="row">
                 <div class="col-7 push-3 sma-col-12 sma-push-clear textblock">
                     <h1>Let's work together</h1>
-                    <p>If you have a project that you'd like me to work on, then get in touch. I'm highly flexible and can accomodate for a wide variety of needs.</p>
-                    <a href="#contact" class="button contact-button">Contact me</a>
+                    <p>If you have a project that you'd like me to work on, then get in touch. I'm highly flexible and can accomodate for a wide variety of needs.
+                        <br><a class="email-me" href="mailto:hi@carlfairclough.me" style="opacity:1; color:#222; cursor:pointer; margin-top:15px;">hi@carlfairclough.me</a><br></p>
+                    <a href="#contact" class="button contact-button">Use the form</a>
 
                     <form method="POST" action="http://formspree.io/hi@carlfairclough.me" class="hidden">
 
