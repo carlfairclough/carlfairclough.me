@@ -41,7 +41,7 @@
                     <p>I initiated the project with extensive wireframing and planning, going through as many different iterations as possible, whilst also making sure that it could be released incrementally - ideally as a part of a weekly deploy process.</p>
                 </div>
                 <div class="col-9  med-col-12">
-                    <img src="<?php echo url; ?>/img/formisimo/wireframes.JPG" style="border:20px solid #D7D7D7" >
+                    <img src="<?php echo url; ?>/img/formisimo/wireframes.jpg" style="border:20px solid #D7D7D7" >
                     <img src="<?php echo url; ?>/img/formisimo/onboarding.png" style="border:20px solid #D7D7D7" >
                     <img src="<?php echo url; ?>/img/formisimo/pricing.png" style="border:20px solid #D7D7D7" >
                     <img src="<?php echo url; ?>/img/formisimo/signup.png" style="border:20px solid #D7D7D7" >
