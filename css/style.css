@@ -218,6 +218,12 @@ header nav {
   z-index: 9999;
 }
 
+footer {
+  background:#ffe445;
+}
+
+
+
 header nav, footer nav {
   background:#FFFFFF;
   padding-top: 30px;
@@ -273,8 +279,13 @@ footer nav {
     float: none;
     margin: 0 auto;
     text-align: center; }
-  footer nav p.copyright {
-    text-align: center; }
+  footer p.copyright {
+    padding-top:40px;
+    text-align: center;
+    color:rgba(0,0,0,0.9);;
+    border-top:1px solid rgba(0,0,0,0.2);
+    margin-top: 0;
+    }
 
 section.details {
   padding-top: 75px;
@@ -358,30 +369,34 @@ figure {
   margin-bottom:0px;
   margin-right:20px;
   font-size:20px;
+  background:rgba(255, 228, 69, 1);
 }
 
 
 figure figcaption {
-  opacity: 0;
-  position: absolute;
-  display: block;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
-  padding-left:20px;
-  padding-right: 20px;
-  padding-top:55px;
-  background:rgba(255,255,0,0);
-  transition:all 0.2s ease-in-out;
+opacity: 0;
+position: absolute;
+display: block;
+left: 0;
+right: 0;
+top: 50%;
+padding-left: 20px;
+padding-right: 20px;
+background: rgba(255,255,0,0);
+transition: all 0.2s ease-in-out;
+-webkit-transform: translateY(-50%);
 }
 
 
+
+.work-ex:hover > figure img {
+  opacity: 0.05;
+}
 
 .work-ex:hover > figure figcaption {
   opacity: 1;
-  background:rgba(255, 228, 69, 0.95);
 }
+
 
 .work-ex {
   color:#222;
@@ -430,13 +445,14 @@ label.radio {
 }
 
 input, textarea {
+  font-family: 'Karla';
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   height: 40px;
-  line-height: 40px;
+  line-height: 36px;
   width: 100%;
-  border: 2px solid #222;
+  border: 2px solid #CFCFCF;
   background:rgba(255,255,255,0);
   appearance: none;
   -webkit-appearance: none;
@@ -445,7 +461,6 @@ input, textarea {
 transition:all 0.25s ease-in-out;}
   input:focus, textarea:focus {
     outline: none;
-    background:rgba(255,255,255,1);
   }
 
     input[type="text"], input[type="email"] {
@@ -471,7 +486,7 @@ input[type="radio"] + label .fakeBox {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  border: 2px solid #222; }
+  border: 2px solid #CFCFCF; }
   input[type="radio"] + label .fakeBox:after {
     content: '';
     position: absolute;
@@ -506,6 +521,11 @@ input[type="radio"]:checked + label .fakeBox {
     -ms-border-radius: 50%;
     border-radius: 50%;
     border: none solid none; }
+
+    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+      background:#FFF;
+      border-color:#222;
+    }
 
 select {
   width: 35%; }
