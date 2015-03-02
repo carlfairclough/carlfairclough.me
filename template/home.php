@@ -65,10 +65,10 @@
                 <div class="col-9 med-col-12">
                     <div class="row">
                         <div class="col-9">
-                            <p>I'm a highly driven and motivated designer currently based in Manchester, England.</p>
-                            <p>After growing up in an environment filled with art, design and engineering, app-design was the natural path to go down. Creating tools that impact upon the lives of millions–for the better–is something which I strive to do.</p>
-                            <p>After freelancing and working for boutique design agencies over the course of two years (clients included GlaxoSmithKline, McLaren, Nestle and Sony), I moved to work in-house for <a href="http://mediaburst.co.uk">Mediaburst</a> as part of a 2-man design team, alongside <a href="https://dribbble.com/jamesstiff">James Stiff</a>. The products worked on over a period of 18 months at Mediaburst include <a href="http://textburst.com">Textburst</a>, <a href="http://getflorence.co.uk">Florence</a>, <a href="http://timetastic.co.uk">Timetastic</a> and <a href="http://www.clockworksms.com/">ClockworkSMS</a>. Each of these products are highly respected in their industries because of their ease of use and focus on usability.</p>
-                            <p>I am currently working on Formisimo, a new product which has carved a niche into the analytics industry, and is already winning awards.</p>
+                                <p>Hey, I’m Carl.</p>
+                                <p>I’m a designer, front-end developer & keen cyclist. I’m fully booked until the 23rd of March, but I'd love to hear about projects and your ideas.</p>
+                                <p>I'm obsessed with Modernism; I’m helping to make Design as transparent as possible, shifting the focus on the user's desires and goals to maximise product potential.</p>
+                                <p>Most of the time you'll be able to find me learning about new technologies, working on awesome projects or <a href="http://instagram.com/carlfairclough">instagramming</a>.</p>
                         </div>
                     </div>
 
