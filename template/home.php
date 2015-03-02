@@ -66,7 +66,7 @@
                     <div class="row">
                         <div class="col-9">
                                 <p>Hey, I’m Carl.</p>
-                                <p>I’m a designer, front-end developer & keen cyclist. I’m fully booked until the 23rd of March, but I'd love to hear about projects and your ideas.</p>
+                                <p>I’m a designer, front-end developer &amp; keen cyclist. I’m fully booked until the 23rd of March, but I'd love to hear about projects and your ideas.</p>
                                 <p>I'm obsessed with Modernism; I’m helping to make Design as transparent as possible, shifting the focus on the user's desires and goals to maximise product potential.</p>
                                 <p>Most of the time you'll be able to find me learning about new technologies, working on awesome projects or <a href="http://instagram.com/carlfairclough">instagramming</a>.</p>
                         </div>
