@@ -8,7 +8,7 @@
                         <div class="col-9 med-col-12 project-description">
                             <p>Timetastic was a working product with an existing user-base, and was fresh out of beta. Their marketing website consisted  just of a sign up form, and this side of the product needed to improved drastically.</p>
                             <p>With the team behind Timetastic, I designed and built an entire marketing website, with the aim to both inform potential new users and assist existing users if they needed it. I also contributed to their billing introduction, and created a style library for the developers and future designers to use to move the product further forwards.</p>
-                            <p>The project was a massive success, and Timetastic went on to have 4000 paid-for users inside its first month, which quickly increased to 6000.</p>
+                            <p>The project was a massive success, and Timetastic went on to have 2000 paid-for users inside its first month, which quickly increased to 6000.</p>
                         </div>
                     </div>
                 </div>
