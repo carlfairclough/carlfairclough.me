@@ -9,7 +9,7 @@
 
                         <a class="col-6 med-col-12 work-ex" href="project/timetastic">
                             <figure>
-                                <img src="img/timetastic/thumb.png">
+                                <img src="img/timetastic/thumb.png" alt="Timetastic Design by Carl Fairclough">
                                 <figcaption class="proj-desc">
                                    With Timetastic I took an almost non-existant MVP marketing site through multiple iterations, in order to both increase exposure &amp; inform users.
                                 </figcaption>
@@ -20,7 +20,7 @@
 
                         <a class="col-6 med-col-12 work-ex" href="project/textburst">
                             <figure>
-                                <img src="img/textburst/thumb.png">
+                                <img src="img/textburst/thumb.png" alt="Textburst design by Carl Fairclough">
                                 <figcaption class="proj-desc">
                                    Textburst and I worked together to roll out an improved visual language, and to improve marketing material. Usability improved and so did sign-ups.
                                 </figcaption>
@@ -33,7 +33,7 @@
 
                          <a class="col-6 med-col-12 work-ex" href="project/formisimo">
                             <figure>
-                                <img src="img/formisimo/thumb.png">
+                                <img src="img/formisimo/thumb.png" alt="Formisimo Design by Carl Fairclough">
                                 <figcaption class="proj-desc">
                                    With Formisimo I redesigned and rebuilt many key and fundamental aspects of both the app and marketing, whilst directing the style and tone.
                                 </figcaption>
@@ -44,7 +44,7 @@
 
                          <a class="col-6 med-col-12 work-ex" href="project/champio">
                             <figure>
-                                <img src="img/champio/thumb.png">
+                                <img src="img/champio/thumb.png" alt="Champio UX and UI Design by Carl Fairclough">
                                 <figcaption class="proj-desc">
                                     I took Champio's MVP further forward and created a highly usable UI after wireframing and planning, to help them to engage users even more.
                                 </figcaption>

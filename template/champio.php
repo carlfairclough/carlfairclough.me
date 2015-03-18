@@ -20,7 +20,7 @@
         </div>
         <div class="col-9  med-col-12">
             <div class="act-img laptop">
-                <img src="<?php echo url; ?>/img/champio/design1.png" >
+                <img src="<?php echo url; ?>/img/champio/design1.png" alt="Champio Social Media Sharing Design by Carl Fairclough">
             </div>
             <img class="mask" src="<?php echo url; ?>/img/laptop-mask.png">
         </div>
@@ -32,8 +32,8 @@
             <p>The end-goal was to create a sharing tool which was seamless and easy-to-use, integrating it with platforms such as Twitter, Facebook and LinkedIn.</p>
         </div>
         <div class="col-9  med-col-12">
-                <img src="<?php echo url; ?>/img/champio/wireframe.png" style="border:40px solid #F2f2f2">
-                <img src="<?php echo url; ?>/img/champio/iphone.jpg">
+                <img src="<?php echo url; ?>/img/champio/wireframe.png" style="border:40px solid #F2f2f2" alt="Champio Social Media Sharing Wireframe Design by Carl Fairclough">
+                <img src="<?php echo url; ?>/img/champio/iphone.jpg" alt="Champio Social Media Sharing Responsive Design by Carl Fairclough">
         </div>
     </div>
 
@@ -44,10 +44,10 @@
         <div class="col-9  med-col-12">
             <div class="row" style="margin: 0;padding: 40px;background: #F2F2F2;">
                 <div class="col-6">
-                    <img src="<?php echo url; ?>/img/champio/style.png">
+                    <img src="<?php echo url; ?>/img/champio/style.png" alt="Champio Style Tile Design by Carl Fairclough">
                 </div>
                 <div class="col-6">
-                    <img src="<?php echo url; ?>/img/champio/profile.png">
+                    <img src="<?php echo url; ?>/img/champio/profile.png" alt="Champio Social Media Profile Design by Carl Fairclough">
                     <img src="<?php echo url; ?>/img/champio/ios.png">
                 </div>
             </div>

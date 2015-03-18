@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-9  med-col-12">
                     <div class="act-img laptop">
-                        <img src="<?php echo url; ?>/img/timetastic/main.png" >
+                        <img src="<?php echo url; ?>/img/timetastic/main.png" alt="Timetastic Homepage Design by Carl Fairclough">
                     </div>
                     <img class="mask" src="<?php echo url; ?>/img/laptop-mask.png">
                 </div>
@@ -44,7 +44,7 @@
                     <div class="act-img">
                         <img src="" >
                     </div>
-                    <img src="<?php echo url; ?>/img/timetastic/email.png">
+                    <img src="<?php echo url; ?>/img/timetastic/email.png" alt="Timetastic Email Design by Carl Fairclough">
                     
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     <div class="act-img">
                         <img src="" >
                     </div>
-                    <img src="<?php echo url; ?>/img/timetastic/email2.png">
+                    <img src="<?php echo url; ?>/img/timetastic/email2.png" alt="Timetastic Email Design by Carl Fairclough">
                     
                 </div>
             </div>
@@ -81,7 +81,7 @@
                     <p>An integral part of this was prototyping interactions and thinking of new interaction models would be intuitive whilst working across platforms.</p>
                 </div>
                 <div class="col-9  med-col-12">
-                    <img src="https://d13yacurqjgara.cloudfront.net/users/52061/screenshots/1673144/attachments/277561/wireframes.png" style="border:20px solid #D7D7D7">
+                    <img src="https://d13yacurqjgara.cloudfront.net/users/52061/screenshots/1673144/attachments/277561/wireframes.png" style="border:20px solid #D7D7D7" alt="Timetastic iOS Wireframes by Carl Fairclough">
                 </div>
             </div>
 
@@ -90,7 +90,7 @@
                     <p>When leaving the project, I handed off a basic style library which allowed Designers and Developers to quickly build on top of what already existed.</p>
                 </div>
                 <div class="col-9 med-col-12">
-                    <img src="<?php echo url; ?>/img/timetastic/style-guide.png" style="border:20px solid #D7D7D7">
+                    <img src="<?php echo url; ?>/img/timetastic/style-guide.png" style="border:20px solid #D7D7D7" alt="Timetastic Style Guide by Carl Fairclough">
 
                 </div>
             </div>
