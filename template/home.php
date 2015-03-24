@@ -11,7 +11,7 @@
                             <figure>
                                 <img src="img/timetastic/thumb.png" alt="Timetastic Design by Carl Fairclough">
                                 <figcaption class="proj-desc">
-                                   With Timetastic I took an almost non-existant MVP marketing site through multiple iterations, in order to both increase exposure &amp; inform users.
+                                   With Timetastic I took an almost non-existent MVP marketing site through multiple iterations, in order to both increase exposure &amp; inform users.
                                 </figcaption>
                             </figure>
                             <h3>Timetastic</h3>
