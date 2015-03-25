@@ -1047,7 +1047,6 @@ ul.month-cal li {
   margin-bottom:10px;
   background:#ffe445;
   position: relative;
-  cursor:pointer;
   text-indent: -9999em;
   overflow: hidden;
 } 
