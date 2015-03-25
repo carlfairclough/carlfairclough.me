@@ -165,12 +165,24 @@ h1, h2, h3, h4 {
   /*column-count: 2;*/
   /*column-gap: 10px;*/
   }
+
+  .aboutcarl .row + .row .col12 .row .col9 {
+    padding-top:0;
+  }
+
   .aboutcarl .col-9 p:first-of-type {
     padding-top: 0 !important;
     margin-top: 0; }
   .aboutcarl .col-9 p:last-of-type {
-    margin-bottom: 41px; }
+    /*margin-bottom: 41px;*/ }
 
+    .aboutcarl h3 + p {
+      color:#7C8288;
+    }
+
+    .aboutcarl p + h3 {
+      padding-top:24px;
+    }
 .indicator {
   font-size: 16px;
   opacity: 0.5;
@@ -375,7 +387,7 @@ section.info {
     margin: 0;
     padding: 0; }
     section.info ul li {
-      width: 50%;
+      /*width: 50%;*/
       display: inline-block;
       float: left;
       padding: 0; }
@@ -830,6 +842,7 @@ section.contactme h2 {
   width:20%;
   float: left;
   margin-bottom: 120px;
+  margin-top:120px;
 }
 
 
@@ -1015,3 +1028,45 @@ label.textarea-label {
 form .row {
   overflow: visible;
 }
+
+.cal-wrap {
+  width:100%;
+  max-width:270px;
+  display: inline-block;
+}
+
+ul.month-cal {
+  width:168px;
+} 
+
+ul.month-cal li {
+  width:14px;
+  height:14px;
+  border-radius: 7px;
+  margin-right:10px;
+  margin-bottom:10px;
+  background:#ffe445;
+  position: relative;
+  cursor:pointer;
+  text-indent: -9999em;
+  overflow: hidden;
+} 
+ul.month-cal li.other-month {
+  visibility: hidden;
+}
+
+ul.month-cal li.Booked {
+  background:#DDD;
+}
+
+ul.month-cal li.Unavailable {
+  background:transparent;
+  border:1px solid #DDD;
+}
+
+@media screen and (max-width: 1040px) {
+  .calendar-overview {
+    display:none!important;
+  }
+}
+

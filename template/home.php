@@ -66,9 +66,26 @@
                     <div class="row">
                         <div class="col-9">
                                 <p>Hey, I’m Carl.</p>
-                                <p>I’m a designer, front-end developer &amp; keen cyclist. I’m fully booked until the 23rd of March, but I'd love to hear about projects and your ideas.</p>
-                                <p>I'm obsessed with Modernism; I’m helping to make Design as transparent as possible, shifting the focus on the user's desires and goals to maximise product potential.</p>
+                                <p>I’m a designer, front-end developer &amp; keen cyclist. I'm obsessed with Modernism; I’m helping to make Design as transparent as possible, shifting the focus on the user's desires and goals to maximise product potential.</p>
                                 <p>Most of the time you'll be able to find me learning about new technologies, working on awesome projects or <a href="http://instagram.com/carlfairclough">instagramming</a>.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h3>Skills</h3>
+                                    <p>I focus on product design: taking new products and existing ones through every phase of the process. Research, Wireframing, UI Design, Prototyping and delivering production code.
+                                    <h3>Availability</h3>
+                                    <p>I'm fully booked for the next few weeks, but I'm happy to make time to discuss your project and find out whether my schedule could fit with yours. If you have a project that you think I would be suited to, <a href="mailto:hi@carlfairclough.me">contact me</a>.</p>
+                                </div>
+                            </div>
+                            <div class="row calendar-overview">
+                                <div class="col-12">
+                                    <?php include('./includes/calendar.php');
+                                    ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
