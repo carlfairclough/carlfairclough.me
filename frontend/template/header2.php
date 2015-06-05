@@ -29,7 +29,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="/css/style.php/style.scss">
+        <link rel="stylesheet" href="/css/scss/scss_cache/1a0e14d87e70da7eea7a2619a6dae8f7.css">
         <script src="/js/vendor/jquery-1.10.2.min.js"></script>
         <script src="/js/main.js"></script>
 
@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="main-col center">
                         <div class="col-4 sma-col-6 mini-bio">
-                            <a class="logo" href="/">Carl Fairclough</a>
+                            <a class="logo" href="http://carlfairclough.me/">Carl Fairclough</a>
                             <div>Digital Designer</div>
                             <div>Manchester</div>
                         </div>

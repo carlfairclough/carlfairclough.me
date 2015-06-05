@@ -10,13 +10,13 @@ $subdomainCount = count($subdomains) - 1;
 $domain = end($subdomains);
 $subdomain = strtolower(trim(rtrim($_SERVER['HTTP_HOST'], $domain), '.'));
 
-if ($subdomainCount == 1) {
+if ($_SERVER['HTTP_HOST'] == 'hire.carlfairclough.me') {
 
-	if ($subdomain == 'hire') {
+	
 		define('name', 'hire');
 		define ('classes', 'hire');
 		$template = 'views/hire.php';
-	}
+	
 	
 	include_once('template/header2.php');
 	include_once($template);
