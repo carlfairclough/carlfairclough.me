@@ -1,6 +1,0 @@
-# humanstxt.org/
-
-I built this in a couple of hours husing the HTML5 boilerplate. I'm working on other things, ask me about them :)
-
-HTML5, CSS3
-Normalize.css, jQuery, Modernizr
