@@ -1,0 +1,36 @@
+// make sure we're using box-sizing: border-box
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+// First we define the row width, using $grid-max-width
+
+.row {
+    display:block;
+    margin:0 auto;
+    width:100%;
+    max-width: $grid-max-width;
+}
+
+.main-col {
+    width:100%;
+    width:780px;
+    padding:0 30px;
+}
+
+.center {
+    margin:0 auto;
+}
+
+.right {
+    float:right;
+}
+
+section {
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+section.testimonial {
+
+}
