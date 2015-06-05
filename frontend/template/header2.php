@@ -20,15 +20,15 @@
         <title>Carl Fairclough | Timetastic Design</title>
         <meta name="description" content="Overview of Carl Fairclough's role in the design of Timetastic, over the course of 18 months.">
         <?php } else { ?>
-            <title>Carl Fairclough | Designer</title>
-            <meta name="description" content="Carl Fairclough is a digital designer from Manchester, focusing on app design and everything that it entails.">
+            <title>Hire Me</title>
+            <meta name="description" content="Carl Fairclough is a digital designer. Find out how to hire him now">
         <?php }; ?>
         
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+	<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/css/scss/scss_cache/1a0e14d87e70da7eea7a2619a6dae8f7.css">
         <script src="/js/vendor/jquery-1.10.2.min.js"></script>
         <script src="/js/main.js"></script>
