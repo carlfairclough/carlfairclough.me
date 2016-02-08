@@ -62,7 +62,7 @@
             <div class="row">
                 <div class="col-7 push-3 sma-push-clear sma-col-12">
                     <h1>I design things</h1>
-                    <p>I design and build clean &amp; usable digital products using research, hard work, and lots of product-specific experience. I focus mainly on app design &amp; development, however I have a penchant for data visualisation &amp; branding.</p>
+                    <p>I design and build clean &amp; usable digital products using research & hard work. I focus mainly on mobile/web app design, with a penchant for data visualisation &amp; branding.</p>
                 </div>
             </div>
             <?php }; ?>
