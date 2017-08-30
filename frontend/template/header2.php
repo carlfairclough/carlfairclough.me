@@ -47,7 +47,7 @@
                         <div class="col-4 sma-col-6 mini-bio">
                             <a class="logo" href="http://carlfairclough.me/">Carl Fairclough</a>
                             <div>Digital Designer</div>
-                            <div>Manchester</div>
+                            <div>Manchester/London/Berlin</div>
                         </div>
                         <ul class="main-links">
                             <li><a href="http://twitter.com/carlfairclough">Twitter</a></li>

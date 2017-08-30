@@ -16,8 +16,8 @@
                 <div class="row">
                     <div class="col-7 push-3 sma-col-12 sma-push-clear textblock">
                         <h1>Let's work together</h1>
-                        <p>If you have a project that you'd like me to work on, then get in touch. I'm highly flexible and can accomodate for a wide variety of needs.
-                            <br><a class="email-me button" href="http://hire.carlfairclough.me" style="opacity:1; color:#222; cursor:pointer; margin-top:20px;">Hire me</a></p>
+                        <p>If you have a project that you'd like me to work on, then get in touch. I'll get back to you as soon as possible.
+                            <br><a class="email-me button" href="mailto:hi@carlfairclough.me" style="opacity:1; color:#222; cursor:pointer; margin-top:20px;">hi@carlfairclough.me</a></p>
                     </div>
                 </div>
 
@@ -25,7 +25,7 @@
             </section>
 
         
-            <p class="copyright">Copyright 2015 Carl Fairclough.</p>
+            <p class="copyright">Copyright <?php echo date("Y"); ?> Carl Fairclough.</p>
         </footer>
 
 
