@@ -13,6 +13,8 @@ $(document).ready(function() {
 		}, 700);
 	})
 
+	console.log("Hello world...");
+
 	$('.cancel-form').click(function(e){
 		e.preventDefault();
 
