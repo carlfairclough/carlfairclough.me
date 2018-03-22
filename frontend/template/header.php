@@ -53,7 +53,6 @@
                 <div class="col-1 right sma-col-6 main-links">
                     <div><a href="http://twitter.com/carlfairclough">Twitter</a></div>
                     <div><a href="http://github.com/carlfairclough">GitHub</a></div>
-                    <div><a href="http://linkedin.com/in/cfairclough">LinkedIn</a></div>
                 </div>
             </div>
             </nav>

@@ -66,8 +66,8 @@
                     <div class="row">
                         <div class="col-9">
                                 <p>Hey, I’m Carl.</p>
-                                <p>I’m a designer, front-end developer &amp; keen cyclist. I'm obsessed with Modernism; I’m helping to make Design as transparent as possible, shifting the focus to the user's desires and goals to maximise product potential.</p>
-                                <p>Most of the time you'll be able to find me learning about new technologies, working on awesome projects or <a href="http://instagram.com/carlfairclough">instagramming</a>.</p>
+                                <p>I’m a designer, front-end developer &amp; systems thinker; I’m helping to make Design as transparent as possible, shifting the focus to the user's desires and goals to maximise social potential.</p>
+                                <p>Most of the time you'll be able to find me learning about new technologies, working on awesome projects or <a href="http://instagram.com/carl___________f">instagramming</a>.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -82,14 +82,6 @@
                             </div>
                         </div>
                     </div>
-
-                        <div class="instagram col-10 right">
-                            <img src="https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/10985996_893143010736019_143583054_n.jpg">
-                            <img src="https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/10956591_712593248859931_1915897068_n.jpg">
-                            <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/10932358_796760810403457_513139625_n.jpg">
-                            <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/10895260_895819653781817_146541392_n.jpg">
-                            <img src="https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/10413002_1629632760595610_749240252_n.jpg">
-                        </div>
                 </div>
 
             </div>

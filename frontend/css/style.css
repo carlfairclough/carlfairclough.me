@@ -375,8 +375,9 @@ footer {
 
 section.info {
   background:#FFF;
-  padding-top: 130px; }
-  section.info h2 {
+  padding-top: 100px;
+  padding-bottom: 130px; }  
+section.info h2 {
     border-bottom: 1px solid #cfcfcf;
     text-align: right;
     margin-right: 30px; }

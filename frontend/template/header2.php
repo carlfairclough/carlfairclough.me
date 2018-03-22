@@ -52,7 +52,6 @@
                         <ul class="main-links">
                             <li><a href="http://twitter.com/carlfairclough">Twitter</a></li>
                             <li><a href="http://github.com/carlfairclough">GitHub</a></li>
-                            <li><a href="http://linkedin.com/in/cfairclough">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
