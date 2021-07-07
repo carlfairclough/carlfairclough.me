@@ -12,20 +12,37 @@
     <style>
       @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
+      ::root {
+        --text: black;
+        --bg: white;
+      }
+
+      @media only screen and (prefers-color-scheme: dark) {
+        ::root {
+          --text: white;
+          --bg: black;
+        }
+      }
+            
+
       html {
         cursor: crosshair;
+        margin: 0;
       }
       body {
         line-height: 1.5;
         font-family: 'Inconsolata', 'Courier New', Courier, monospace;
-        padding: 0 4vw;
-        max-width: 50em;
+        padding: 0;
+        padding: 0;
+        position: relative;
+        background: var(--bg);
+        color: var(--text);
       }
 
       header,
       section,
       footer {
-        margin: 6vh 0;
+        margin: 6em 0;
       }
       h1,
       h2,
@@ -37,67 +54,225 @@
       li {
         font-size: 16px;
       }
+
+      .title:before {
+        display: inline-block;
+        content: '▭ ';
+        white-space: pre;
+      }
+      .title:after {
+        display: block;
+        white-space: pre;
+        content: '  ...............................................'
+      }
+
+      p, h3 {
+        margin-left: 2ch;
+      }
+
+      .my0 {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      .mx0 {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .px0 {
+        padding-left: 0;
+        padding-right: 0;
+      }
       
       .o7 {
         opacity: 0.7
       }
 
       ::selection {
-        background: #000;
-        color: #fff;
+        background: var(--bg);
+        color: var(--text);
       }
+      
+      pre {
+        position: fixed;
+        top: 2em;
+        right: 2em;
+        width: 150ch;
+        height: calc(100% - 4em);
+        /* z-index: 250; */
+        /* -webkit-transform: translateZ(0); */
+        
+      }
+
+      pre span {
+        z-index: 300;
+      }
+
+      article {
+        margin-bottom: 1em;
+      }
+
+      img {
+        width: calc(100% - 2ch);
+        margin-left: 2ch;
+      }
+
+      .content {
+        margin: 6em 2em;
+        width: 49ch;
+        z-index: 200;
+      }
+
+      .no-list {
+        list-style: none;
+      }
+
+      .ib {
+        display: inline-block;
+      }
+
+      .ml2 {
+        margin-left: 2ch;
+      } 
+
+      .founder { background: lightblue; padding: 0 1ch; display: inline}
+      .product { background: lightgreen; padding: 0 1ch; display: inline}
+      .design { background: paleturquoise; padding: 0 1ch; display: inline}
+      .strategy { background: lightpink; padding: 0 1ch; display: inline}
+
+
     </style>
   </head>
 
   <body>
-    <header>
-      <h1>Carl Fairclough, Product Designer</h1>
-      <p>
-        Carl Fairclough is a designer currently based in Dubai, working to
-        create Products for people in the wider MENA region by leveraging game
-        theory, bleeding-edge technology, and an interaction design toolkit.
-      </p>
-    </header>
-    <section>
-      <h2>Project History</h2>
-      <ol>
-        <li>Mamo: <span class="o7">Product Design Lead</span></li>
-        <li>Ethereum.org: <span class="o7">Product Design Lead</span></li>
-        <li>ConsenSys + Smart Dubai Office: <span class="o7">Product Design Lead EdTech</span></li>
-        <li>ConsenSys + 🔒: <span class="o7">Product Lead, FinTech</span></li>
-        <li>ConsenSys + Dubai Properties Group: <span class="o7">Design & Front-End Lead, Governance</span></li>
-        <li>Sixo + ZeroHeight: <span class="o7">Product Design, Design Systems<span></li>
-        <li>Sixo + noon: <span class="o7">Design Systems Lead, eCommerce</span></li>
-        <li>Sixo + DesignStudio London: <span class="o7">Design Systems Lead, eCommerce</span></li>
-        <li>Sixo + Yum! + NowTV: <span class="o7">Design & Engineering Lead, Rewards Promotion</span></li>
-        <li>Sixo + Braun + Tesco: <span class="o7">Design & Engineering Lead, Marketing</span></li>
-        <li>Sixo: <span class="o7">Co-founder, Co-operative</span></li>
-        <li>Voiteq: <span class="o7">Design Systems Lead, Asset Tracking</span></li>
-        <li>Nesle + Cineworld: <span class="o7">Design & Engineering Lead, Rewards Promotion</span></li>
-        <li>Formisimo: <span class="o7">Design & Front-End Lead, Analytics</span></li>
-        <li>Timetastic: <span class="o7">Interaction Designer, HR Tooling</span></li>
-        <li>Mediaburst: <span class="o7">Interaction Designer, Communications Tools</span></li>
-        <li>Florence: <span class="o7">Design Engineer, Healthcare</span></li>
-        <li>SEO Creative: <span class="o7">Web Design, Healthcare</span></li>
-      </ol>
-    </section>
-    <section>
-      <h2>Strengths</h2>
-      <p><u>Design:</u> Systems Design, User Research, Information Architecture, User Flow Mapping, Wireframing, UI Design, Testing, Data-driven design</p>
-      <p><u>Development:</u> React, React Native, CSS, HTML</p>
-      <p><u>Org:</u> Design & Development Integration, Decentralized Collaboration</p>
-      </p>
-    </section>
-    <footer>
-      <h2>Contact</h2>
-      <p>
-        If you know of an opportunity in any major city to design ethical products and build the
-        frameworks to iterate on them, please reach out.
-      </p>
-      <p>
-        <b><a href="mailto:hi@carlfairclough.me">hi@carlfairclough.me</a></b>
-      </p>
-      <p>@carlfairclough</p>
-    </footer>
+
+    <div class="flex">
+      <div class="content">
+        <h1 class="title">Carl Fairclough (▰˘◡˘▰)</h1>
+        <p>Hello! I’m Carl, a product designer. I work mainly in the Ethereum ecosystem, helping to put users first and take part in the ✨internet renaissance✨.</p>
+        <img src="/images/carl-fairclough.jpg" />
+        <p>I have past lives in Berlin, Dubai and Vienna.</p>
+        <p>Outside of work I work on dumb old cars, go climbing and tame the beast.</p>     
+      </div>
+
+      <section class="content">
+        <h2 class="title">Recent projects</h2>
+        <article>
+          <h3 class="my0">🚕  Nifty Taxi</h3>
+          <p class="my0">A tool to deploy NFTs from within Figma via NFT platforms</p>
+        </article>
+        <article>
+          <h3 class="my0">💎 Ethereum.org</h3>
+          <ul class="no-list my0 mx0 px0 ml2">
+            <li class="design my0 mx0 ib">product design</li>
+            <li class="strategy my0 mx0 ib">strategy</li>
+          </ul>
+          <p class="my0">Redesigned Ethereum.org and set the direction
+            for it to become a comprehensive resource for
+            newcomers to the space.</p>
+        </article>
+        <article>
+          <h3 class="my0">🐰 rabbithole.gg</h3>
+          <ul class="no-list my0 mx0 px0 ml2">
+            <li class="design my0 mx0 ib">product design</li>
+          </ul>
+          <p class="my0">Redesigned Ethereum.org and set the direction
+            for it to become a comprehensive resource for
+            newcomers to the space.</p>
+        </article>
+        <article>
+          <h3 class="my0">🇦🇪 mamo pay</h3>
+          <ul class="no-list my0 mx0 px0 ml2">
+            <li class="founder my0 mx0 ib">founder</li>
+            <li class="product my0 mx0 ib">product</li>
+            <li class="design my0 mx0 ib">product design</li>
+          </ul>
+          <p class="my0">Redesigned Ethereum.org and set the direction
+            for it to become a comprehensive resource for
+            newcomers to the space.</p>
+        </article>
+      </section>
+
+      <section class="content">
+        <h2 class="title">Resume</h2>
+        <article>
+          <h3 class="my0">💜 Founder @ Best Friend Studio</h3>
+          <p class="my0">A tool to deploy NFTs from within Figma via NFT platforms</p>
+        </article>
+        <article>
+          <h3 class="my0">🌀 Snr. Product Designer @ ConsenSys</h3>
+          <ul class="no-list my0 mx0 px0 ml2">
+            <li class="design my0 mx0 ib">product design</li>
+            <li class="strategy my0 mx0 ib">strategy</li>
+          </ul>
+          <p class="my0">Redesigned Ethereum.org and set the direction
+            for it to become a comprehensive resource for
+            newcomers to the space.</p>
+        </article>
+        <article>
+          <h3 class="my0">😎 Design Systems Lead @ noon.ae</h3>
+          <ul class="no-list my0 mx0 px0 ml2">
+            <li class="design my0 mx0 ib">product design</li>
+          </ul>
+          <p class="my0">Redesigned Ethereum.org and set the direction
+            for it to become a comprehensive resource for
+            newcomers to the space.</p>
+        </article>
+        <article>
+          <h3 class="my0">6️⃣ Founder @ Sixo</h3>
+          <ul class="no-list my0 mx0 px0 ml2">
+            <li class="founder my0 mx0 ib">founder</li>
+            <li class="product my0 mx0 ib">product</li>
+            <li class="design my0 mx0 ib">product design</li>
+          </ul>
+          <p class="my0">Redesigned Ethereum.org and set the direction
+            for it to become a comprehensive resource for
+            newcomers to the space.</p>
+        </article>
+        <article>
+          <h3 class="my0">🕸 Web Designer @ SEO Creative</h3>
+          <ul class="no-list my0 mx0 px0 ml2">
+            <li class="founder my0 mx0 ib">founder</li>
+            <li class="product my0 mx0 ib">product</li>
+            <li class="design my0 mx0 ib">product design</li>
+          </ul>
+          <p class="my0">Redesigned Ethereum.org and set the direction
+            for it to become a comprehensive resource for
+            newcomers to the space.</p>
+        </article>
+      </section>
+    </div>
+    <pre> </pre>
   </body>
+  <script type="module">
+
+              // Import the program runner
+              import {run} from './src/run.js'
+    
+    // Import a custom program; with at least a main() function exported
+    import * as program from './src/program.js'
+
+
+      document.addEventListener("DOMContentLoaded",function(){
+
+
+ 
+  
+    // Run settings can override the default- and program seetings.
+    // See the API for details.
+    const settings = {
+      fps : 60,
+      element : document.querySelector('pre'),
+      cursorelement : document.querySelector('html')
+    }
+        console.log('go')
+        // Boot (returns a promise)
+        run(program, settings).catch(function(e){
+          console.warn(e.message)
+          console.log(e.error)
+        })
+    })
+    
+  </script>
 </html>
