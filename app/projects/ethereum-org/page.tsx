@@ -33,27 +33,6 @@ export default function EthereumOrg() {
             <strong>The fix:</strong> Make it the go-to place for learning about
             Ethereum
           </p>
-          <p className="text-base font-normal">
-            <strong>The team:</strong> Worked with{" "}
-            <a
-              href="https://liamcobb.com/"
-              className="underline decoration-wavy decoration-blue-700"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Liam Cobb
-            </a>{" "}
-            on illustrations and brought in{" "}
-            <a
-              href="https://www.ryancordell.design/"
-              className="underline decoration-wavy decoration-blue-700"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ryan Cordell
-            </a>{" "}
-            for content strategy
-          </p>
         </div>
       </section>
 
