@@ -9,9 +9,7 @@ export default function EthereumOrg() {
           Ethereum.org
           <span className="opacity-70 text-base block">2019-2020</span>
         </h1>
-        <p className="opacity-70 text-base font-normal">
-          Design System Lead & Website Redesign
-        </p>
+        <p className="opacity-70 text-base font-normal">Platform Redesign</p>
       </header>
 
       <section className="my-[6vh] max-w-[50em] px-[4vw]">
@@ -101,38 +99,74 @@ export default function EthereumOrg() {
         </p>
       </section>
 
-      <section className="my-[6vh]  max-w-[50em] px-[4vw]">
-        <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
-          Design System Development
-        </h2>
-        <p className="text-base font-normal mb-4">
-          I was initially engaged to lead a design system that would work for
-          real audiences, via identified personas. Not just designers or
-          developers, but anyone who wanted to help make Ethereum more
-          accessible.
-        </p>
-        <p className="mb-4">
-          The system had to incredibly simple and incredibly straightforward.
-          Too much complexity would hinder contributions. It needed to handle:
-        </p>
-        <ul className="text-base font-normal mb-4 list-disc ml-6">
-          <li>Hundreds of people creating content without breaking things</li>
-          <li>Components that looked good no matter who used them</li>
-          <li>Simple, clear instructions that didn't require a PhD</li>
-          <li>Content that could grow organically without falling apart</li>
-        </ul>
-        <p className="text-base font-normal mb-4">
-          This then became the foundation that let ethereum.org grow from 5
-          lonely pages to hundreds of pages with thousands of contributors
-          writing in over 50 languages.
-        </p>
-        <h3 className="mb-4 font-bold">How it worked:</h3>
-        <p className="text-base font-normal">
-          I used React and MDX so people could write in simple markdown but
-          still use fancy components. Writers could focus on writing, designers
-          could focus on design, and everything just worked together without
-          anyone needing to become a coding expert.
-        </p>
+      <section className="my-[6vh]">
+        <div className="  max-w-[50em] px-[4vw]">
+          <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
+            Design System Development
+          </h2>
+          <p className="text-base font-normal mb-4">
+            I was initially engaged to lead a design system that would work for
+            real audiences, via identified personas. Not just designers or
+            developers, but anyone who wanted to help make Ethereum more
+            accessible.
+          </p>
+          <p className="mb-4">
+            The system had to incredibly simple and incredibly straightforward.
+            Too much complexity would hinder contributions. It needed to handle:
+          </p>
+          <ul className="text-base font-normal mb-4 list-disc ml-6">
+            <li>Hundreds of people creating content without breaking things</li>
+            <li>Components that looked good no matter who used them</li>
+            <li>Simple, clear instructions that didn't require a PhD</li>
+            <li>Content that could grow organically without falling apart</li>
+          </ul>
+          <p className="text-base font-normal mb-4">
+            This then became the foundation that let ethereum.org grow from 5
+            lonely pages to hundreds of pages with thousands of contributors
+            writing in over 50 languages.
+          </p>
+        </div>
+        <ImageGallery
+          images={[
+            {
+              src: "/projects/ethereum/ethereum-styleguide-colours.png",
+              alt: "Ethereum.org styleguide colors by Carl Fairclough",
+            },
+            {
+              src: "/projects/ethereum/ethereum-styleguide-icons.png",
+              alt: "Ethereum.org styleguide icons by Carl Fairclough",
+            },
+            {
+              src: "/projects/ethereum/ethereum-styleguide-lists.png",
+              alt: "Ethereum.org styleguide lists by Carl Fairclough",
+            },
+            {
+              src: "/projects/ethereum/ethereum-styleguide-nav.png",
+              alt: "Ethereum.org styleguide navigation by Carl Fairclough",
+            },
+            {
+              src: "/projects/ethereum/ethereum-styleguide-cards.png",
+              alt: "Ethereum.org styleguide cards by Carl Fairclough",
+            },
+            {
+              src: "/projects/ethereum/ethereum-styleguide-search.png",
+              alt: "Ethereum.org styleguide search by Carl Fairclough",
+            },
+            {
+              src: "/projects/ethereum/ethereum-styleguide-code.png",
+              alt: "Ethereum.org styleguide code by Carl Fairclough",
+            },
+          ]}
+        />
+        <div className="  max-w-[50em] px-[4vw]">
+          <h3 className="mb-4 font-bold">How it worked:</h3>
+          <p className="text-base font-normal">
+            I used React and MDX so people could write in simple markdown but
+            still use fancy components. Writers could focus on writing,
+            designers could focus on design, and everything just worked together
+            without anyone needing to become a coding expert.
+          </p>
+        </div>
       </section>
 
       <section className="my-[6vh]">
