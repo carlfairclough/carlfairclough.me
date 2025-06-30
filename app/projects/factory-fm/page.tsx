@@ -80,8 +80,9 @@ export default function FactoryFM() {
         <p className="text-base font-normal mb-4">
           After proving the concept, we hired a team to build out a mobile-first
           MVP. We brought on Shaun Church and Kaspar Pyyding to help reframe the
-          experience around mobile-first behaviors. The website was initially
-          only made available to a limited group using mobile web browsers.
+          experience around mobile-first behaviors, both as senior Engineers to
+          help us build a stellar consumer app. The website was initially only
+          made available to a limited group using mobile web browsers.
         </p>
       </section>
       <ImageGallery
@@ -357,8 +358,8 @@ export default function FactoryFM() {
 
         <p className="text-base font-normal mb-4">
           Factory was a loss-leader for the wider data-sharing vision, helping
-          us raise roughly $1.5m at a $5m valuation. From early 2025, focus
-          shifted heavily to that broader protocol. Factory hit the back
+          us raise roughly [REDACTED] at [REDACTED] valuation. From early 2025,
+          focus shifted heavily to that broader protocol. Factory hit the back
           burner—we had hoped it could become a source of data for other
           music/social websites within our network.
         </p>

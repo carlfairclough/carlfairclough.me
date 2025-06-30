@@ -71,25 +71,47 @@ const collaborators: Collaborator[] = [
       "https://pbs.twimg.com/profile_images/1650147994707308545/TisNyM5F_400x400.jpg",
     url: "https://x.com/zherring",
   },
+  {
+    name: "Sarah Mills",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHJEH-K3pZPGg/profile-displayphoto-crop_800_800/B4DZeJsC4NHAAM-/0/1750361715169?e=1756944000&v=beta&t=IT4XOlWGEDHxzMLaCkOBE9Rtc8t8D5FkFwHNw5G5viM",
+    url: "https://www.linkedin.com/in/starsoup7/",
+  },
+  {
+    name: "Walter Rodriguez",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQFtiah-vOlINw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1703864816599?e=1756944000&v=beta&t=bAlf_dBnCkNb07PfTmLrzSTXRaD2PMq8VM7B2SQ-YEE",
+    url: "https://www.linkedin.com/in/walter-rodriguez-b605ab54/",
+  },
+  {
+    name: "Michael Lockwitz",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4E03AQHCE34Jd4oKKg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1547476089562?e=1756944000&v=beta&t=3bUymWjtu-2J_EeTSCZIbKVzjkKGpaB3KtdYjCTQ67I",
+    url: "https://www.linkedin.com/in/mlockwitz/",
+  },
 ];
 
 export default function Collaborators() {
   return (
-    <section className="mb-[16vh] pt-[8vh]">
-      <h2 className="text-base font-normal">Collaborators</h2>
-      <div className="flex flex-wrap gap-3 my-4">
+    <section className="mb-[16vh] pt-[8vh] text-lg">
+      <h2 className="font-normal mb-4">Collaborators</h2>
+      <p className="text-slate-700 mb-4">
+        Some of the best leaders & team-members I've had the pleasure of working
+        with:
+      </p>
+      <div className="flex flex-wrap gap-3 my-4 text-sm">
         {collaborators.map((collaborator, index) => (
           <a
             key={index}
             href={collaborator.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 rounded-full pl-1 pr-2 py-1 transition-colors text-sm"
+            className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-slate-700 rounded-full pl-1 pr-2 py-1 transition-colors"
           >
             <img
               src={collaborator.image}
               alt={collaborator.name}
-              className="w-6 h-6 rounded-full object-cover"
+              className="w-7 h-7 rounded-full object-cover"
             />
             <span className="font-normal">{collaborator.name}</span>
           </a>
