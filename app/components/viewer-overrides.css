@@ -1,0 +1,66 @@
+/* Custom overrides for viewerjs buttons */
+
+/* Override the default white icons with black ones */
+.viewer-zoom-in::before, 
+.viewer-zoom-out::before, 
+.viewer-one-to-one::before, 
+.viewer-reset::before, 
+.viewer-prev::before, 
+.viewer-play::before, 
+.viewer-next::before, 
+.viewer-rotate-left::before, 
+.viewer-rotate-right::before, 
+.viewer-flip-horizontal::before, 
+.viewer-flip-vertical::before, 
+.viewer-fullscreen::before, 
+.viewer-fullscreen-exit::before, 
+.viewer-close::before {
+  background-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgNDAiPjxwYXRoIGZpbGw9IiMwMDAiIGQ9Ik00OS42IDE3LjloMjAuMnYzLjlINDkuNnptMTIzLjEgMiAxMC45LTExIDIuNyAyLjgtOC4yIDguMiA4LjIgOC4yLTIuNyAyLjctMTAuOS0xMC45em05NCAwLTEwLjgtMTEtMi43IDIuOCA4LjEgOC4yLTguMSA4LjIgMi43IDIuNyAxMC44LTEwLjl6TTIxMiA5LjNsMjAuMSAxMC42TDIxMiAzMC41VjkuM3ptMTYxLjUgNC42LTcuMiA2IDcuMiA1Ljl2LTRoMTIuNHY0bDcuMy01LjktNy4zLTZ2NGgtMTIuNHYtNHptNDAuMiAxMi4zIDUuOSA3LjIgNS45LTcuMmgtNFYxMy42aDRsLTUuOS03LjMtNS45IDcuM2g0djEyLjZoLTR6bTM1LjktMTYuNWg2LjN2MmgtNC4zVjE2aC0yVjkuN1ptMTQgMGg2LjJWMTZoLTJ2LTQuM2gtNC4ydi0yWm02LjIgMTRWMzBoLTYuMnYtMmg0LjJ2LTQuM2gyWm0tMTQgNi4zaC02LjJ2LTYuM2gydjQuNGg0LjN2MlptLTQzOCAuMXYtOC4zSDkuNnYtMy45aDguMlY5LjdoMy45djguMmg4LjF2My45aC04LjF2OC4zaC0zLjl6TTkzLjYgOS43aC01Ljh2My45aDJWMzBoMy44VjkuN3ptMTYuMSAwaC01Ljh2My45aDEuOVYzMGgzLjlWOS43em0tMTEuOSA0LjFoMy45djMuOWgtMy45em0wIDguMmgzLjl2My45aC0zLjl6bTI0NC42LTExLjcgNy4yIDUuOS03LjIgNnYtMy42Yy01LjQtLjQtNy44LjgtOC43IDIuOC0uOCAxLjctMS44IDQuOSAyLjggOC4yLTYuMy0yLTcuNS02LjktNi0xMS4zIDEuNi00LjQgOC01IDExLjktNC45di0zLjFabTE0Ny4yIDEzLjRoNi4zVjMwaC0ydi00LjNoLTQuM3YtMnptMTQgNi4zdi02LjNoNi4ydjJoLTQuM1YzMGgtMS45em02LjItMTRoLTYuMlY5LjdoMS45VjE0aDQuM3Yyem0tMTMuOSAwaC02LjN2LTJoNC4zVjkuN2gyVjE2em0zMy4zIDEyLjUgOC42LTguNi04LjYtOC43IDEuOS0xLjkgOC42IDguNyA4LjYtOC43IDEuOSAxLjktOC42IDguNyA4LjYgOC42LTEuOSAyLTguNi04LjctOC42IDguNy0xLjktMnpNMjk3IDEwLjNsLTcuMSA1LjkgNy4yIDZ2LTMuNmM1LjMtLjQgNy43LjggOC43IDIuOC44IDEuNyAxLjcgNC45LTIuOSA4LjIgNi4zLTIgNy41LTYuOSA2LTExLjMtMS42LTQuNC03LjktNS0xMS44LTQuOXYtMy4xWm0tMTU3LjMtLjZjMi4zIDAgNC40LjcgNiAybDIuNS0zIDEuOSA5LjJoLTkuM2wyLjYtMy4xYTYuMiA2LjIgMCAwIDAtOS45IDUuMWMwIDMuNCAyLjggNi4zIDYuMiA2LjMgMi44IDAgNS4xLTEuOSA2LTQuNGg0Yy0xIDQuNy01IDguMy0xMCA4LjNhMTAgMTAgMCAwIDEtMTAtMTAuMiAxMCAxMCAwIDAgMSAxMC0xMC4yWiIvPjwvc3ZnPgo=") !important;
+}
+
+/* Toolbar buttons */
+.viewer-toolbar > ul > li {
+  background-color: white !important;
+  border: 1px solid #f1f5f9 !important; /* slate-100 */
+  border-radius: 4px !important; /* rectangular instead of circular */
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+}
+
+.viewer-toolbar > ul > li:focus,
+.viewer-toolbar > ul > li:hover {
+  background-color: #f8fafc !important; /* slate-50 */
+  border-color: #e2e8f0 !important; /* slate-200 */
+}
+
+.viewer-toolbar > ul > li:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #f1f5f9 !important; /* slate-100 focus ring */
+  outline: 0 !important;
+}
+
+/* Close button (top right) */
+.viewer-button {
+  background-color: white !important;
+  border: 1px solid #f1f5f9 !important; /* slate-100 */
+  border-radius: 4px !important; /* rectangular instead of circular */
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+  height: 40px !important;
+  width: 40px !important;
+  right: 20px !important;
+  top: 20px !important;
+}
+
+.viewer-button:focus,
+.viewer-button:hover {
+  background-color: #f8fafc !important; /* slate-50 */
+  border-color: #e2e8f0 !important; /* slate-200 */
+}
+
+.viewer-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #f1f5f9 !important; /* slate-100 focus ring */
+  outline: 0 !important;
+}
+
+.viewer-button::before {
+  bottom: 10px !important;
+  left: 10px !important;
+}
