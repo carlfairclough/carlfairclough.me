@@ -11,8 +11,8 @@ export default function Home() {
           <span className="opacity-70">is a Product Designer & Engineer</span>
         </h1>
         <p className="opacity-70 font-normal text-[1.6em] lowercase">
-          Bulding teams & products that beat complexity with delight so that
-          people can do what they need and get on with their lives
+          Building teams & products that transform complexity into meaningful
+          experiences, shipping high-leverage work that matters
         </p>
       </header>
 

@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export default function FactoryFM() {
   return (
-    <div className="min-h-screen px-[4vw] max-w-[50em] font-mono leading-relaxed cursor-crosshair selection:bg-black selection:text-white text-slate-700">
-      <header className="my-[6vh]">
+    <div className="min-h-screen font-mono leading-relaxed cursor-crosshair selection:bg-black selection:text-white text-slate-700">
+      <header className="my-[6vh] px-[4vw] max-w-[50em]">
         <h1 className="text-[1.6em] font-normal text-black">
           Factory.fm
           <span className="opacity-70 text-base block">2024-2025</span>
@@ -17,9 +17,9 @@ export default function FactoryFM() {
         </p>
       </header>
 
-      <FullWidthBanner />
+      {/* <FullWidthBanner /> */}
 
-      <section className="my-[6vh]">
+      <section className="my-[6vh] px-[4vw] max-w-[50em] ">
         <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
           Strategy
         </h2>
@@ -51,7 +51,7 @@ export default function FactoryFM() {
         </p>
       </section>
 
-      <section className="my-[6vh]">
+      <section className="my-[6vh] px-[4vw] max-w-[50em]">
         <h2 className="text-xl font-normal my-4 text-black">
           Execution & Growth
         </h2>
@@ -83,52 +83,53 @@ export default function FactoryFM() {
           experience around mobile-first behaviors. The website was initially
           only made available to a limited group using mobile web browsers.
         </p>
-        <ImageGallery
-          images={[
-            {
-              src: "/projects/factory-fm/search-m-1.png",
-              alt: "Factory.fm search flow step 1",
-            },
-            {
-              src: "/projects/factory-fm/search-m-2.png",
-              alt: "Factory.fm search flow step 2",
-            },
-            {
-              src: "/projects/factory-fm/search-m-3.png",
-              alt: "Factory.fm search flow step 3",
-            },
-            {
-              src: "/projects/factory-fm/search-m-4.png",
-              alt: "Factory.fm search flow step 4",
-            },
-            {
-              src: "/projects/factory-fm/log-m-1.png",
-              alt: "Factory.fm log flow step 1",
-            },
-            {
-              src: "/projects/factory-fm/log-m-2.png",
-              alt: "Factory.fm log flow step 2",
-            },
-            {
-              src: "/projects/factory-fm/log-m-3.png",
-              alt: "Factory.fm log flow step 3",
-            },
-            {
-              src: "/projects/factory-fm/release-m-1.png",
-              alt: "Factory.fm release flow step 1",
-            },
-            {
-              src: "/projects/factory-fm/release-m-2.png",
-              alt: "Factory.fm release flow step 2",
-            },
-            {
-              src: "/projects/factory-fm/factory-mvp.png",
-              alt: "Factory.fm MVP overview",
-            },
-          ]}
-          caption="Mobile-first UI focused on generating social proof and the core logging experience"
-        />
-
+      </section>
+      <ImageGallery
+        images={[
+          {
+            src: "/projects/factory-fm/search-m-1.png",
+            alt: "Factory.fm search flow step 1",
+          },
+          {
+            src: "/projects/factory-fm/search-m-2.png",
+            alt: "Factory.fm search flow step 2",
+          },
+          {
+            src: "/projects/factory-fm/search-m-3.png",
+            alt: "Factory.fm search flow step 3",
+          },
+          {
+            src: "/projects/factory-fm/search-m-4.png",
+            alt: "Factory.fm search flow step 4",
+          },
+          {
+            src: "/projects/factory-fm/log-m-1.png",
+            alt: "Factory.fm log flow step 1",
+          },
+          {
+            src: "/projects/factory-fm/log-m-2.png",
+            alt: "Factory.fm log flow step 2",
+          },
+          {
+            src: "/projects/factory-fm/log-m-3.png",
+            alt: "Factory.fm log flow step 3",
+          },
+          {
+            src: "/projects/factory-fm/release-m-1.png",
+            alt: "Factory.fm release flow step 1",
+          },
+          {
+            src: "/projects/factory-fm/release-m-2.png",
+            alt: "Factory.fm release flow step 2",
+          },
+          {
+            src: "/projects/factory-fm/factory-mvp.png",
+            alt: "Factory.fm MVP overview",
+          },
+        ]}
+        caption="Mobile-first UI focused on generating social proof and the core logging experience"
+      />
+      <section className="px-[4vw] max-w-[50em]">
         <p className="text-base font-normal mb-4">
           From there, we launched a closed beta to stress test social dynamics
           and user intent.
@@ -171,9 +172,10 @@ export default function FactoryFM() {
           markers of growth, and demonstrated that retention was a huge
           priority.
         </p>
+      </section>
 
-        <ActivityChart />
-
+      <ActivityChart />
+      <section className="px-[4vw] max-w-[50em]">
         <p className="text-base font-normal mb-4">
           <span className="text-red-600">
             We had saturated our personal audiences and needed to move further.
@@ -211,135 +213,137 @@ export default function FactoryFM() {
           genuine enthusiasm for the platform's approach to music discovery and
           community building.
         </p>
-        <TweetCarousel>
-          <blockquote
-            className="twitter-tweet block w-80 flex-shrink-0"
-            data-dnt="true"
-            //@ts-expect-error
-            align="left"
-          >
-            <p lang="en" dir="ltr">
-              <a href="https://twitter.com/clivealfy/status/1837910342644465791?ref_src=twsrc%5Etfw">
-                September 22, 2024
-              </a>
-            </p>
-            &mdash; clivealfy (@clivealfy)
-          </blockquote>
+      </section>
+      <TweetCarousel>
+        <blockquote
+          className="twitter-tweet block w-80 flex-shrink-0"
+          data-dnt="true"
+          //@ts-expect-error
+          align="left"
+        >
+          <p lang="en" dir="ltr">
+            <a href="https://twitter.com/clivealfy/status/1837910342644465791?ref_src=twsrc%5Etfw">
+              September 22, 2024
+            </a>
+          </p>
+          &mdash; clivealfy (@clivealfy)
+        </blockquote>
 
-          <blockquote
-            className="twitter-tweet block w-80 flex-shrink-0"
-            data-dnt="true"
-            //@ts-expect-error
-            align="left"
-          >
-            <p lang="en" dir="ltr">
-              <a href="https://twitter.com/MikeShupp/status/1866843398851924087?ref_src=twsrc%5Etfw">
-                December 11, 2024
-              </a>
-            </p>
-            &mdash; Mike Shupp (@MikeShupp)
-          </blockquote>
+        <blockquote
+          className="twitter-tweet block w-80 flex-shrink-0"
+          data-dnt="true"
+          //@ts-expect-error
+          align="left"
+        >
+          <p lang="en" dir="ltr">
+            <a href="https://twitter.com/MikeShupp/status/1866843398851924087?ref_src=twsrc%5Etfw">
+              December 11, 2024
+            </a>
+          </p>
+          &mdash; Mike Shupp (@MikeShupp)
+        </blockquote>
 
-          <blockquote
-            className="twitter-tweet block w-80 flex-shrink-0"
-            data-dnt="true"
-            //@ts-expect-error
-            align="left"
-          >
-            <p lang="en" dir="ltr">
-              <a href="https://twitter.com/imalvarodelgado/status/1901658186286780786?ref_src=twsrc%5Etfw">
-                November 15, 2024
-              </a>
-            </p>
-            &mdash; Álvaro Delgado (@imalvarodelgado)
-          </blockquote>
+        <blockquote
+          className="twitter-tweet block w-80 flex-shrink-0"
+          data-dnt="true"
+          //@ts-expect-error
+          align="left"
+        >
+          <p lang="en" dir="ltr">
+            <a href="https://twitter.com/imalvarodelgado/status/1901658186286780786?ref_src=twsrc%5Etfw">
+              November 15, 2024
+            </a>
+          </p>
+          &mdash; Álvaro Delgado (@imalvarodelgado)
+        </blockquote>
 
-          <blockquote
-            className="twitter-tweet block w-80 flex-shrink-0"
-            data-dnt="true"
-            //@ts-expect-error
-            align="left"
-          >
-            <p lang="en" dir="ltr">
-              <a href="https://twitter.com/bigvibessss/status/1818031693397365151?ref_src=twsrc%5Etfw">
-                July 30, 2024
-              </a>
-            </p>
-            &mdash; bigvibessss (@bigvibessss)
-          </blockquote>
+        <blockquote
+          className="twitter-tweet block w-80 flex-shrink-0"
+          data-dnt="true"
+          //@ts-expect-error
+          align="left"
+        >
+          <p lang="en" dir="ltr">
+            <a href="https://twitter.com/bigvibessss/status/1818031693397365151?ref_src=twsrc%5Etfw">
+              July 30, 2024
+            </a>
+          </p>
+          &mdash; bigvibessss (@bigvibessss)
+        </blockquote>
 
-          <blockquote
-            className="twitter-tweet block w-80 flex-shrink-0"
-            data-dnt="true"
-            //@ts-expect-error
-            align="left"
-          >
-            <p lang="en" dir="ltr">
-              <a href="https://twitter.com/elsapo_fede/status/1899183725880938499?ref_src=twsrc%5Etfw">
-                November 8, 2024
-              </a>
-            </p>
-            &mdash; elsapo_fede (@elsapo_fede)
-          </blockquote>
+        <blockquote
+          className="twitter-tweet block w-80 flex-shrink-0"
+          data-dnt="true"
+          //@ts-expect-error
+          align="left"
+        >
+          <p lang="en" dir="ltr">
+            <a href="https://twitter.com/elsapo_fede/status/1899183725880938499?ref_src=twsrc%5Etfw">
+              November 8, 2024
+            </a>
+          </p>
+          &mdash; elsapo_fede (@elsapo_fede)
+        </blockquote>
 
-          <blockquote
-            className="twitter-tweet block w-80 flex-shrink-0"
-            data-dnt="true"
-            //@ts-expect-error
-            align="left"
-          >
-            <p lang="en" dir="ltr">
-              <a href="https://twitter.com/kushgrandma_/status/1864011639906824562?ref_src=twsrc%5Etfw">
-                December 4, 2024
-              </a>
-            </p>
-            &mdash; kushgrandma_ (@kushgrandma_)
-          </blockquote>
+        <blockquote
+          className="twitter-tweet block w-80 flex-shrink-0"
+          data-dnt="true"
+          //@ts-expect-error
+          align="left"
+        >
+          <p lang="en" dir="ltr">
+            <a href="https://twitter.com/kushgrandma_/status/1864011639906824562?ref_src=twsrc%5Etfw">
+              December 4, 2024
+            </a>
+          </p>
+          &mdash; kushgrandma_ (@kushgrandma_)
+        </blockquote>
 
-          <blockquote
-            className="twitter-tweet block w-80 flex-shrink-0"
-            data-dnt="true"
-            //@ts-expect-error
-            align="left"
-          >
-            <p lang="en" dir="ltr">
-              <a href="https://twitter.com/_johnsonator/status/1921668093547258014?ref_src=twsrc%5Etfw">
-                November 9, 2024
-              </a>
-            </p>
-            &mdash; _johnsonator (@_johnsonator)
-          </blockquote>
-        </TweetCarousel>
-        <ImageGallery
-          images={[
-            {
-              src: "/projects/factory-fm/profile-n-1.png",
-              alt: "Factory.fm profile screen",
-            },
-            {
-              src: "/projects/factory-fm/search-n-1.png",
-              alt: "Factory.fm search screen",
-            },
-            {
-              src: "/projects/factory-fm/log-n-1.png",
-              alt: "Factory.fm log screen",
-            },
-            {
-              src: "/projects/factory-fm/factory-n-cards-logs.png",
-              alt: "Factory.fm cards logs view",
-            },
-            {
-              src: "/projects/factory-fm/factory-n-cards-comments.png",
-              alt: "Factory.fm cards comments view",
-            },
-            {
-              src: "/projects/factory-fm/factory-n-cards-release.png",
-              alt: "Factory.fm cards release view",
-            },
-          ]}
-          caption="Native UI focused on honing core interaction, providing shortcuts via gestures such as long-press, and creating a comprehensive, reusable system which could be reused across desktop, web and mobile"
-        />
+        <blockquote
+          className="twitter-tweet block w-80 flex-shrink-0"
+          data-dnt="true"
+          //@ts-expect-error
+          align="left"
+        >
+          <p lang="en" dir="ltr">
+            <a href="https://twitter.com/_johnsonator/status/1921668093547258014?ref_src=twsrc%5Etfw">
+              November 9, 2024
+            </a>
+          </p>
+          &mdash; _johnsonator (@_johnsonator)
+        </blockquote>
+      </TweetCarousel>
+      <ImageGallery
+        images={[
+          {
+            src: "/projects/factory-fm/profile-n-1.png",
+            alt: "Factory.fm profile screen",
+          },
+          {
+            src: "/projects/factory-fm/search-n-1.png",
+            alt: "Factory.fm search screen",
+          },
+          {
+            src: "/projects/factory-fm/log-n-1.png",
+            alt: "Factory.fm log screen",
+          },
+          {
+            src: "/projects/factory-fm/factory-n-cards-logs.png",
+            alt: "Factory.fm cards logs view",
+          },
+          {
+            src: "/projects/factory-fm/factory-n-cards-comments.png",
+            alt: "Factory.fm cards comments view",
+          },
+          {
+            src: "/projects/factory-fm/factory-n-cards-release.png",
+            alt: "Factory.fm cards release view",
+          },
+        ]}
+        caption="Native UI focused on honing core interaction, providing shortcuts via gestures such as long-press, and creating a comprehensive, reusable system which could be reused across desktop, web and mobile"
+      />
 
+      <section className="px-[4vw] max-w-[50em]">
         <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
           Outcome
         </h2>
@@ -367,12 +371,6 @@ export default function FactoryFM() {
           broken out if needed.
         </p>
       </section>
-
-      <footer className="my-[6vh]">
-        <Link href="/" className="text-base font-normal hover:underline">
-          ← Back to home
-        </Link>
-      </footer>
     </div>
   );
 }

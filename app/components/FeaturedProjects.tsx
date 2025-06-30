@@ -119,10 +119,10 @@ export default function FeaturedProjects() {
   };
 
   return (
-    <section className="my-[6vh] -mx-[4vw]">
+    <section className="my-[6vh] -ml-[5vw] w-screen overflow-hidden">
       {/* <h2 className="text-base font-normal px-[4vw]">Featured Projects</h2> */}
       <ScrollContainer
-        className="flex gap-4 pb-4 px-[4vw] w-screen overflow-x-hidden"
+        className="flex gap-4 pb-4 px-[4vw] overflow-x-hidden"
         innerRef={containerRef}
         onStartScroll={() => setIsDragging(true)}
         onEndScroll={() => {
@@ -156,7 +156,7 @@ export default function FeaturedProjects() {
                 />
               </div>
             </Link>
-            <div className="px-4 py-2 text-xl flex w-full justify-between">
+            <div className="px-4 py-2 text-base md:text-xl lg:flex w-full justify-between">
               <h3 className="font-normal">{project.name}</h3>
               <span className="opacity-70">{project.period}</span>
             </div>

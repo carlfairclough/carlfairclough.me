@@ -25,4 +25,31 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.bg-dot-grid {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-dot-grid {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+  }
+}
+/* 
+@keyframes shimmer {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+} */
+
+.animate-shimmer {
+  animation: shimmer 8s ease-in-out infinite;
+}
+
 

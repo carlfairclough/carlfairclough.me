@@ -1,6 +1,6 @@
 export default function ActivityChart() {
   return (
-    <div className="my-4 -mx-[4vw] w-screen  px-[4vw] py-[4vw]">
+    <div className="my-4 px-[4vw] py-[4vw]">
       <div className="flex">
         <svg height="400" viewBox="0 0 1200 400">
           <defs>

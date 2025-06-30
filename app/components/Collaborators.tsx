@@ -75,7 +75,7 @@ const collaborators: Collaborator[] = [
 
 export default function Collaborators() {
   return (
-    <section className="my-[6vh]">
+    <section className="mb-[16vh] pt-[8vh]">
       <h2 className="text-base font-normal">Collaborators</h2>
       <div className="flex flex-wrap gap-3 my-4">
         {collaborators.map((collaborator, index) => (

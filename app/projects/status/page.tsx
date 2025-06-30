@@ -19,12 +19,6 @@ export default function Status() {
           Details about Status project coming soon.
         </p>
       </section>
-
-      <footer className="my-[6vh]">
-        <Link href="/" className="text-base font-normal hover:underline">
-          ← Back to home
-        </Link>
-      </footer>
     </div>
   );
 }

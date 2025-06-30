@@ -89,9 +89,9 @@ export default function ImageGallery({
   };
 
   return (
-    <div className={`px-[4vw] py-12 w-screen my-4 -mx-[4vw] ${className}`}>
+    <div className={`py-12 w-full my-4 overflow-hidden ${className}`}>
       <ScrollContainer
-        className="flex gap-4 cursor-grab overflow-x-hidden"
+        className="flex gap-4 cursor-grab overflow-x-hidden px-[4vw]"
         innerRef={(ref) => {
           containerRef.current = ref as HTMLDivElement;
           galleryRef.current = ref as HTMLDivElement;
@@ -122,7 +122,9 @@ export default function ImageGallery({
         ))}
       </ScrollContainer>
       {caption && (
-        <p className="text-sm opacity-70 mt-4 text-gray-700">{caption}</p>
+        <p className="text-sm opacity-70 mt-4 text-gray-700 px-[4vw]">
+          {caption}
+        </p>
       )}
     </div>
   );

@@ -13,7 +13,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased relative`}>
+        <div className="fixed inset-0 pointer-events-none z-0">
+          <div className="absolute inset-0 bg-dot-grid opacity-30 animate-shimmer"></div>
+        </div>
+        <div className="relative z-10">{children}</div>
+      </body>
     </html>
   );
 }

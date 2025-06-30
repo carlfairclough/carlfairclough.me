@@ -14,34 +14,25 @@ export default function ProjectsLayout({
             href="/"
             className="flex items-center gap-3 hover:opacity-70 transition-opacity"
           >
-            <div 
-              className="w-12 h-12 rounded-full bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: 'url(/portrait.png)' }}
+            <div
+              className="w-12 h-12 rounded-full bg-cover bg-center bg-no-repeat -ml-4"
+              style={{ backgroundImage: "url(/portrait.png)" }}
             />
 
             <span className="font-mono text-base text-black">
               Carl Fairclough
             </span>
           </Link>
-
-          <div className="flex items-center gap-6">
-            <Link
-              href="/projects"
-              className="font-mono text-sm text-slate-600 hover:text-black transition-colors"
-            >
-              Projects
-            </Link>
-            <Link
-              href="/"
-              className="font-mono text-sm text-slate-600 hover:text-black transition-colors"
-            >
-              Home
-            </Link>
-          </div>
         </div>
       </nav>
 
       <main className="pt-16">{children}</main>
+
+      <footer className="my-[6vh] px-[4vw]">
+        <Link href="/" className="text-base font-normal hover:underline">
+          ← Back to home
+        </Link>
+      </footer>
     </div>
   );
 }

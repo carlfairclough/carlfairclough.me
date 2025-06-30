@@ -100,12 +100,16 @@ const projectHistory: ProjectHistoryItem[] = [
 
 export default function ProjectHistory() {
   return (
-    <section className="my-[6vh]">
-      <h2 className="text-base font-normal">Project History</h2>
-      <ol className="list-decimal list-inside">
+    <section className="py-[15vh] text-lg">
+      <h2 className="text-lg font-normal mb-4">Project History</h2>
+      <ol className="list-decimal list-inside text-slate-700">
         {projectHistory.map((item, index) => (
-          <li key={index} className="text-base font-normal">
-            {item.company}: <span className="opacity-70">{item.role}</span>
+          <li
+            key={index}
+            className="py-1 border-b border-dashed border-slate-200 flex justify-between"
+          >
+            <span>{item.company}</span>{" "}
+            <span className="opacity-70">{item.role}</span>
           </li>
         ))}
       </ol>

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function EthereumOrg() {
   return (
-    <div className="min-h-screen px-[4vw] max-w-[50em] font-mono leading-relaxed cursor-crosshair selection:bg-black selection:text-white text-slate-700">
-      <header className="my-[6vh]">
+    <div className="min-h-screen leading-relaxed selection:bg-black selection:text-white text-slate-700">
+      <header className="my-[6vh] max-w-[50em] px-[4vw]">
         <h1 className="text-[1.6em] font-normal text-black">
           Ethereum.org
           <span className="opacity-70 text-base block">2019-2020</span>
@@ -14,7 +14,7 @@ export default function EthereumOrg() {
         </p>
       </header>
 
-      <section className="my-[6vh]">
+      <section className="my-[6vh] max-w-[50em] px-[4vw]">
         <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
           Overview
         </h2>
@@ -59,7 +59,7 @@ export default function EthereumOrg() {
         </div>
       </section>
 
-      <section className="my-[6vh]">
+      <section className="my-[6vh] max-w-[50em] px-[4vw]">
         <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
           The Problem
         </h2>
@@ -101,7 +101,7 @@ export default function EthereumOrg() {
         </p>
       </section>
 
-      <section className="my-[6vh]">
+      <section className="my-[6vh]  max-w-[50em] px-[4vw]">
         <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
           Design System Development
         </h2>
@@ -136,14 +136,16 @@ export default function EthereumOrg() {
       </section>
 
       <section className="my-[6vh]">
-        <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
-          The Transformation: Putting Principles Into Practice
-        </h2>
-        <p className="text-base font-normal mb-4">
-          Working with Liam Cobb, we transformed ethereum.org into something
-          that was highly accessible while also being hopeful and inspiring
-          instead of confusing. Clean. Utopian. But basic and approachable.
-        </p>
+        <div className=" max-w-[50em] px-[4vw]">
+          <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
+            The Transformation: Putting Principles Into Practice
+          </h2>
+          <p className="text-base font-normal mb-4">
+            Working with Liam Cobb, we transformed ethereum.org into something
+            that was highly accessible while also being hopeful and inspiring
+            instead of confusing. Clean. Utopian. But basic and approachable.
+          </p>
+        </div>
 
         <ImageGallery
           images={[
@@ -165,21 +167,24 @@ export default function EthereumOrg() {
             },
           ]}
         />
-        <p className="text-base font-normal mb-4">
-          {`This wasn't just about making things pretty. The visual style had to
+
+        <div className=" max-w-[50em] px-[4vw]">
+          <p className="text-base font-normal mb-4">
+            {`This wasn't just about making things pretty. The visual style had to
           make ethereum.org feel like a place for learning and possibility, not
           just dry technical docs. We wanted people to see Ethereum's potential
           for changing things, while making all the complex stuff feel
           approachable.`}
-        </p>
-        <p className="text-base font-normal">
-          It worked. The community loved it, newcomers felt welcome, and the
-          style became so synonymous with Ethereum that hundreds of other
-          projects started using similar approaches.
-        </p>
+          </p>
+          <p className="text-base font-normal">
+            It worked. The community loved it, newcomers felt welcome, and the
+            style became so synonymous with Ethereum that hundreds of other
+            projects started using similar approaches.
+          </p>
+        </div>
       </section>
 
-      <section className="my-[6vh]">
+      <section className="my-[6vh] px-[4vw]">
         <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
           Impact & Results
         </h2>
