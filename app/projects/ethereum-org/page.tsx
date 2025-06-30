@@ -19,11 +19,11 @@ export default function EthereumOrg() {
           Overview
         </h2>
         <p className="text-base font-normal mb-4">
-          {` Ethereum.org was struggling. The team approached me to help build
+          Ethereum.org was struggling. The team approached me to help build
           something that would actually work—a design system that regular people
           could use to contribute content, handle different languages, and grow
           with the community. What started as fixing their contribution flow
-          turned into redesigning the entire site.`}
+          turned into redesigning the entire site.
         </p>
         <div className="mb-4">
           <p className="text-base font-normal mb-2">
