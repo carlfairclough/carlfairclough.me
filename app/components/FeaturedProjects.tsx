@@ -10,6 +10,7 @@ interface Project {
   period: string;
   coverImage: string;
   hoverImages?: string[];
+  comingSoon?: boolean;
 }
 
 const featuredProjects: Project[] = [
@@ -41,18 +42,28 @@ const featuredProjects: Project[] = [
     href: "/projects/ethereum-org",
     period: "2020",
     coverImage: "/projects/ethereum/cover-ethereum.png",
+    hoverImages: [
+      "/projects/ethereum/ethereum-redesign-homepage.png",
+      "/projects/ethereum/ethereum-redesign-developers.png",
+      "/projects/ethereum/ethereum-redesign-individuals.png",
+      "/projects/ethereum/ethereum-redesign-eth.png",
+      "/projects/ethereum/pageview-stats-1.png",
+      "/projects/ethereum/pageview stats-2.png",
+    ],
   },
   {
     name: "Status",
     href: "/projects/status",
     period: "2021-2022",
     coverImage: "/projects/status/cover-status.png",
+    comingSoon: true,
   },
   {
     name: "Disco",
     href: "/projects/disco",
     period: "2022-2023",
     coverImage: "/projects/disco/cover-disco.png",
+    comingSoon: true,
   },
 ];
 
@@ -132,30 +143,52 @@ export default function FeaturedProjects() {
       >
         {featuredProjects.map((project, index) => (
           <div key={index} className="w-full max-w-[600px]">
-            <Link
-              href={project.href}
-              className="flex-shrink-0 hover:bg-gray-50 transition-colors block cursor-pointer"
-              style={{ maxWidth: "600px" }}
-              onClick={(e) => {
-                if (isDragging) {
-                  e.preventDefault();
-                }
-              }}
-              onMouseEnter={() => setHoveredProject(index)}
-              onMouseLeave={() => {
-                setHoveredProject(null);
-                setCurrentHoverImage((prev) => ({ ...prev, [index]: 0 }));
-              }}
-            >
-              <div className="relative w-full aspect-video rounded-2xl border border-slate-200 overflow-hidden cursor-pointe">
-                <img
-                  src={getCurrentImage(project, index)}
-                  alt={`${project.name} cover`}
-                  className="w-full h-full object-cover cursor-pointe"
-                  draggable={false}
-                />
+            {project.comingSoon ? (
+              <div
+                className="flex-shrink-0 block cursor-default opacity-75"
+                style={{ maxWidth: "600px" }}
+                onMouseEnter={() => setHoveredProject(index)}
+                onMouseLeave={() => {
+                  setHoveredProject(null);
+                  setCurrentHoverImage((prev) => ({ ...prev, [index]: 0 }));
+                }}
+              >
+                <div className="relative w-full aspect-video rounded-2xl border border-slate-200 overflow-hidden">
+                  <img
+                    src={getCurrentImage(project, index)}
+                    alt={`${project.name} cover`}
+                    className="w-full h-full object-cover"
+                    draggable={false}
+                  />
+                  <div className="soon-tag">Soon</div>
+                </div>
               </div>
-            </Link>
+            ) : (
+              <Link
+                href={project.href}
+                className="flex-shrink-0 hover:bg-gray-50 transition-colors block cursor-pointer"
+                style={{ maxWidth: "600px" }}
+                onClick={(e) => {
+                  if (isDragging) {
+                    e.preventDefault();
+                  }
+                }}
+                onMouseEnter={() => setHoveredProject(index)}
+                onMouseLeave={() => {
+                  setHoveredProject(null);
+                  setCurrentHoverImage((prev) => ({ ...prev, [index]: 0 }));
+                }}
+              >
+                <div className="relative w-full aspect-video rounded-2xl border border-slate-200 overflow-hidden cursor-pointe">
+                  <img
+                    src={getCurrentImage(project, index)}
+                    alt={`${project.name} cover`}
+                    className="w-full h-full object-cover cursor-pointe"
+                    draggable={false}
+                  />
+                </div>
+              </Link>
+            )}
             <div className="px-4 py-2 text-base md:text-xl lg:flex w-full justify-between">
               <h3 className="font-normal">{project.name}</h3>
               <span className="opacity-70">{project.period}</span>

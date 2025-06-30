@@ -184,52 +184,63 @@ export default function EthereumOrg() {
         </div>
       </section>
 
-      <section className="my-[6vh] px-[4vw]">
-        <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">
-          Impact & Results
-        </h2>
-        <p className="text-base font-normal mb-4">
-          The numbers tell the story:
-        </p>
-        <ul className="text-base font-normal mb-4 list-disc ml-6">
-          <li>Went from dozens to thousands of people contributing</li>
-          <li>5 pages became hundreds of pages of actual useful content</li>
-          <li>Millions of people visit every month</li>
-          <li>Available in 50 languages</li>
-          <li>Over 4,000 volunteers translating content</li>
-          <li>
-            More than a quarter of visitors read it in their native language
-          </li>
-          <li>Fully community-run instead of foundation-controlled</li>
-        </ul>
-        <p className="text-base font-normal mb-4">
-          {`
+      <section className="my-[6vh]">
+        <div className="px-[4vw] max-w-[50em]">
+          <h2 className="font-normal mt-[2vw] mb-4 text-black">
+            Impact & Results
+          </h2>
+          <p className="text-base font-normal mb-4">
+            The numbers tell the story:
+          </p>
+          <ul className="text-base font-normal mb-4 list-disc ml-6">
+            <li>Went from dozens to thousands of people contributing</li>
+            <li>5 pages became hundreds of pages of actual useful content</li>
+            <li>Millions of people visit every month</li>
+            <li>Available in 50 languages</li>
+            <li>Over 4,000 volunteers translating content</li>
+            <li>
+              More than a quarter of visitors read it in their native language
+            </li>
+            <li>Fully community-run instead of foundation-controlled</li>
+          </ul>
+          <p className="text-base font-normal mb-4">
+            {`
           Most importantly, ethereum.org became the place people actually go to
           learn about Ethereum. It's trusted, comprehensive, and genuinely
           helpful—exactly what the ecosystem needed.`}
-        </p>
-        <p className="text-base font-normal">
-          Sam Richards talks about this whole transformation in his DevCon
-          presentation{" "}
-          <a
-            href="https://www.youtube.com/watch?v=OX7tk7hLZsA&t=1125"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-wavy decoration-blue-700  cursor-pointer hover:text-blue-700"
-          >
-            Ethereum.org: Past, Present & Future (18:45)
-          </a>
-          . He explains how the design work made it possible for ethereum.org to
-          become truly community-driven rather than just another corporate
-          website.
-        </p>
-      </section>
+          </p>
+        </div>
+        <ImageGallery
+          images={[
+            {
+              src: "/projects/ethereum/pageview-stats-1.png",
+              alt: "Long-tail results of the design system & redesign by Carl Fairclough",
+            },
+            {
+              src: "/projects/ethereum/pageview-stats-2.png",
+              alt: "Long-tail results of the design system & redesign by Carl Fairclough",
+            },
+          ]}
+        />
 
-      <footer className="my-[6vh]">
-        <Link href="/" className="text-base font-normal hover:underline">
-          ← Back to home
-        </Link>
-      </footer>
+        <div className="px-[4vw] max-w-[50em]">
+          <p className="text-base font-normal">
+            Sam Richards talks about this whole transformation in his DevCon
+            presentation{" "}
+            <a
+              href="https://www.youtube.com/watch?v=OX7tk7hLZsA&t=1125"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-wavy decoration-blue-700  cursor-pointer hover:text-blue-700"
+            >
+              Ethereum.org: Past, Present & Future (18:45)
+            </a>
+            . He explains how the design work made it possible for ethereum.org
+            to become truly community-driven rather than just another corporate
+            website.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
