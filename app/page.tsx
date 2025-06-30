@@ -1,10 +1,11 @@
+import Link from "next/link";
 import Collaborators from "./components/Collaborators";
 import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    <div className="min-h-screen px-[4vw] max-w-[50em] font-mono leading-relaxed cursor-crosshair selection:bg-black selection:text-white">
-      <header className="py-[15vh]">
+    <div className="min-h-screen leading-relaxed cursor-crosshair selection:bg-black selection:text-white">
+      <header className="py-[15vh] px-[4vw] max-w-[50em] ">
         <img src="/portrait.png" width="80" className="-mx-4" />
         <h1 className="text-[1.6em] font-normal">
           Carl Fairclough{" "}
@@ -19,6 +20,23 @@ export default function Home() {
       <Projects />
 
       <Collaborators />
+
+      <footer className="my-[6vh] md:flex justify-between items-end px-[4vw] w-full ">
+        <h2 className="text-3xl">
+          Let's work together <span className="bold">→</span>{" "}
+          <a
+            href="mailto:hi@carl.fyi"
+            className="decoration-wavy decoration-3 decoration-blue-700 text-blue-700 underline"
+          >
+            hi@carl.fyi
+          </a>
+        </h2>
+        <div className="mt-[6vh] md:mt-auto">
+          <Link href="/privacy" className="text-slate-500  ">
+            Privacy Policy
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -130,72 +130,69 @@ export default function FeaturedProjects() {
   };
 
   return (
-    <section className="my-[6vh] -ml-[5vw] w-screen overflow-hidden">
-      {/* <h2 className="text-base font-normal px-[4vw]">Featured Projects</h2> */}
-      <ScrollContainer
-        className="flex gap-4 pb-4 px-[4vw] overflow-x-hidden"
-        innerRef={containerRef}
-        onStartScroll={() => setIsDragging(true)}
-        onEndScroll={() => {
-          setIsDragging(false);
-          setTimeout(handleEndScroll, 100);
-        }}
-      >
-        {featuredProjects.map((project, index) => (
-          <div key={index} className="w-full max-w-[600px] min-w-[240px]">
-            {project.comingSoon ? (
-              <div
-                className="flex-shrink-0 block cursor-default opacity-75"
-                style={{ maxWidth: "600px" }}
-                onMouseEnter={() => setHoveredProject(index)}
-                onMouseLeave={() => {
-                  setHoveredProject(null);
-                  setCurrentHoverImage((prev) => ({ ...prev, [index]: 0 }));
-                }}
-              >
-                <div className="relative w-full aspect-video rounded-2xl border border-slate-200 overflow-hidden">
-                  <img
-                    src={getCurrentImage(project, index)}
-                    alt={`${project.name} cover`}
-                    className="w-full h-full object-cover"
-                    draggable={false}
-                  />
-                  <div className="soon-tag">Soon</div>
-                </div>
+    <ScrollContainer
+      className="flex gap-4 pb-4 px-[4vw] my-[6vh] overflow-x-hidden"
+      innerRef={containerRef}
+      onStartScroll={() => setIsDragging(true)}
+      onEndScroll={() => {
+        setIsDragging(false);
+        setTimeout(handleEndScroll, 100);
+      }}
+    >
+      {featuredProjects.map((project, index) => (
+        <div key={index} className="w-full max-w-[600px] min-w-[240px]">
+          {project.comingSoon ? (
+            <div
+              className="flex-shrink-0 block cursor-default opacity-75"
+              style={{ maxWidth: "600px" }}
+              onMouseEnter={() => setHoveredProject(index)}
+              onMouseLeave={() => {
+                setHoveredProject(null);
+                setCurrentHoverImage((prev) => ({ ...prev, [index]: 0 }));
+              }}
+            >
+              <div className="relative w-full aspect-video rounded-2xl border border-slate-200 overflow-hidden">
+                <img
+                  src={getCurrentImage(project, index)}
+                  alt={`${project.name} cover`}
+                  className="w-full h-full object-cover"
+                  draggable={false}
+                />
+                <div className="soon-tag">Soon</div>
               </div>
-            ) : (
-              <Link
-                href={project.href}
-                className="flex-shrink-0 hover:bg-gray-50 transition-colors block cursor-pointer"
-                style={{ maxWidth: "600px" }}
-                onClick={(e) => {
-                  if (isDragging) {
-                    e.preventDefault();
-                  }
-                }}
-                onMouseEnter={() => setHoveredProject(index)}
-                onMouseLeave={() => {
-                  setHoveredProject(null);
-                  setCurrentHoverImage((prev) => ({ ...prev, [index]: 0 }));
-                }}
-              >
-                <div className="relative w-full aspect-video rounded-2xl border border-slate-200 overflow-hidden cursor-pointe">
-                  <img
-                    src={getCurrentImage(project, index)}
-                    alt={`${project.name} cover`}
-                    className="w-full h-full object-cover cursor-pointe"
-                    draggable={false}
-                  />
-                </div>
-              </Link>
-            )}
-            <div className="px-4 py-2 text-base md:text-xl lg:flex w-full justify-between">
-              <h3 className="font-normal">{project.name}</h3>
-              <span className="opacity-70">{project.period}</span>
             </div>
+          ) : (
+            <Link
+              href={project.href}
+              className="flex-shrink-0 hover:bg-gray-50 transition-colors block cursor-pointer"
+              style={{ maxWidth: "600px" }}
+              onClick={(e) => {
+                if (isDragging) {
+                  e.preventDefault();
+                }
+              }}
+              onMouseEnter={() => setHoveredProject(index)}
+              onMouseLeave={() => {
+                setHoveredProject(null);
+                setCurrentHoverImage((prev) => ({ ...prev, [index]: 0 }));
+              }}
+            >
+              <div className="relative w-full aspect-video rounded-2xl border border-slate-200 overflow-hidden cursor-pointe">
+                <img
+                  src={getCurrentImage(project, index)}
+                  alt={`${project.name} cover`}
+                  className="w-full h-full object-cover cursor-pointe"
+                  draggable={false}
+                />
+              </div>
+            </Link>
+          )}
+          <div className="px-4 py-2 text-base md:text-xl lg:flex w-full justify-between">
+            <h3 className="font-normal">{project.name}</h3>
+            <span className="opacity-70">{project.period}</span>
           </div>
-        ))}
-      </ScrollContainer>
-    </section>
+        </div>
+      ))}
+    </ScrollContainer>
   );
 }

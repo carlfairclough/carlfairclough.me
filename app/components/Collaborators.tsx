@@ -111,7 +111,7 @@ const collaborators: Collaborator[] = [
 
 export default function Collaborators() {
   return (
-    <section className="mb-[16vh] pt-[8vh] text-lg">
+    <section className="mb-[16vh] pt-[8vh] text-lg px-[4vw] max-w-[50em]">
       <h2 className="font-normal mb-4">Collaborators</h2>
       <p className="text-slate-700 mb-4">
         Some of the best leaders & team-members I've had the pleasure of working
