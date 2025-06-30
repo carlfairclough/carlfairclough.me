@@ -82,7 +82,7 @@ export default function ActivityChart() {
           />
 
           {/* Overall trendline */}
-          <line
+          {/* <line
             x1="80"
             y1="340"
             x2="1120"
@@ -91,7 +91,7 @@ export default function ActivityChart() {
             strokeWidth="2"
             strokeDasharray="10,5"
             opacity="0.8"
-          />
+          /> */}
 
           {/* 7-day average line excluding outliers */}
           <polyline
