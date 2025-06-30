@@ -2,6 +2,7 @@ import ActivityChart from "./ActivityChart";
 import TweetCarousel from "./TweetCarousel";
 import ImageGallery from "../../components/ImageGallery";
 import FullWidthBanner from "../../components/FullWidthBanner";
+import Link from "next/link";
 
 export default function FactoryFM() {
   return (
@@ -368,9 +369,9 @@ export default function FactoryFM() {
       </section>
 
       <footer className="my-[6vh]">
-        <a href="/" className="text-base font-normal hover:underline">
+        <Link href="/" className="text-base font-normal hover:underline">
           ← Back to home
-        </a>
+        </Link>
       </footer>
     </div>
   );

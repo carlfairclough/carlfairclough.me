@@ -19,38 +19,6 @@ export default function Home() {
       <Projects />
 
       <Collaborators />
-
-      {/* <section className="my-[6vh]">
-        <h2 className="text-base font-normal">Buzzwords:</h2>
-        <p className="text-base font-normal">
-          <u>Design:</u> Systems Design, User Research, Information
-          Architecture, User Flows, Wireframing, UI Design, Testing, Data-driven
-          design
-        </p>
-        <p className="text-base font-normal">
-          <u>Development:</u> Javascript, CSS, HTML, React, Typescript, Next.js,
-          EVM, MongoDB, Postgres, SQL
-        </p>
-        <p className="text-base font-normal">
-          <u>Org:</u> Product Leadership, Design & Development Integration,
-          Cross-functional Delivery, Strategic Thinking
-        </p>
-      </section>
-
-      <footer className="my-[6vh]">
-        <h2 className="text-base font-normal">Contact</h2>
-        <p className="text-base font-normal">
-          If you know of an opportunity to build products that scale under
-          constraint and lead teams that ship with clarity and speed, please
-          reach out.
-        </p>
-        <p className="text-base font-normal">
-          <b>
-            <a href="mailto:hi@carlfairclough.me">hi@carlfairclough.me</a>
-          </b>
-        </p>
-        <p className="text-base font-normal">@carlfairclough</p>
-      </footer> */}
     </div>
   );
 }

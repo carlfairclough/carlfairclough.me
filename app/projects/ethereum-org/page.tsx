@@ -1,4 +1,5 @@
 import ImageGallery from "@/app/components/ImageGallery";
+import Link from "next/link";
 
 export default function EthereumOrg() {
   return (
@@ -18,16 +19,17 @@ export default function EthereumOrg() {
           Overview
         </h2>
         <p className="text-base font-normal mb-4">
-          Ethereum.org was struggling. The team approached me to help build
+          {` Ethereum.org was struggling. The team approached me to help build
           something that would actually work—a design system that regular people
           could use to contribute content, handle different languages, and grow
           with the community. What started as fixing their contribution flow
-          turned into redesigning the entire site.
+          turned into redesigning the entire site.`}
         </p>
         <div className="mb-4">
           <p className="text-base font-normal mb-2">
-            <strong>The problem:</strong> A confusing website that didn't serve
-            anyone well
+            <strong>The problem:</strong>{" "}
+            {`A confusing website that didn't
+            serve anybody well`}
           </p>
           <p className="text-base font-normal mb-2">
             <strong>The fix:</strong> Make it the go-to place for learning about
@@ -62,8 +64,8 @@ export default function EthereumOrg() {
           The Problem
         </h2>
         <p className="text-base font-normal mb-4">
-          Before 2018, ethereum.org was effectively just the Ethereum Foundation
-          talking to itself:
+          {`Before 2018, ethereum.org was effectively just the Ethereum Foundation
+          talking to itself:`}
         </p>
         <ul className="text-base font-normal mb-4 list-disc ml-6">
           <li>Barely any content, and what was there felt thin</li>
@@ -164,11 +166,11 @@ export default function EthereumOrg() {
           ]}
         />
         <p className="text-base font-normal mb-4">
-          This wasn't just about making things pretty. The visual style had to
+          {`This wasn't just about making things pretty. The visual style had to
           make ethereum.org feel like a place for learning and possibility, not
           just dry technical docs. We wanted people to see Ethereum's potential
           for changing things, while making all the complex stuff feel
-          approachable.
+          approachable.`}
         </p>
         <p className="text-base font-normal">
           It worked. The community loved it, newcomers felt welcome, and the
@@ -196,9 +198,10 @@ export default function EthereumOrg() {
           <li>Fully community-run instead of foundation-controlled</li>
         </ul>
         <p className="text-base font-normal mb-4">
+          {`
           Most importantly, ethereum.org became the place people actually go to
           learn about Ethereum. It's trusted, comprehensive, and genuinely
-          helpful—exactly what the ecosystem needed.
+          helpful—exactly what the ecosystem needed.`}
         </p>
         <p className="text-base font-normal">
           Sam Richards talks about this whole transformation in his DevCon
@@ -209,7 +212,7 @@ export default function EthereumOrg() {
             rel="noopener noreferrer"
             className="underline decoration-wavy decoration-blue-700  cursor-pointer hover:text-blue-700"
           >
-            "Ethereum.org: Past, Present & Future" (18:45)
+            Ethereum.org: Past, Present & Future (18:45)
           </a>
           . He explains how the design work made it possible for ethereum.org to
           become truly community-driven rather than just another corporate
@@ -218,9 +221,9 @@ export default function EthereumOrg() {
       </section>
 
       <footer className="my-[6vh]">
-        <a href="/" className="text-base font-normal hover:underline">
+        <Link href="/" className="text-base font-normal hover:underline">
           ← Back to home
-        </a>
+        </Link>
       </footer>
     </div>
   );

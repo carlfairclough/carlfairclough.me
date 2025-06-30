@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 
@@ -57,7 +58,7 @@ const featuredProjects: Project[] = [
 
 export default function FeaturedProjects() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   const [currentHoverImage, setCurrentHoverImage] = useState<{
@@ -77,7 +78,7 @@ export default function FeaturedProjects() {
       Math.min(newIndex, featuredProjects.length - 1)
     );
 
-    setCurrentIndex(clampedIndex);
+    // setCurrentIndex(clampedIndex);
     container.scrollTo({
       left: clampedIndex * itemWidth,
       behavior: "smooth",
@@ -131,7 +132,7 @@ export default function FeaturedProjects() {
       >
         {featuredProjects.map((project, index) => (
           <div key={index} className="w-full max-w-[600px]">
-            <a
+            <Link
               href={project.href}
               className="flex-shrink-0 hover:bg-gray-50 transition-colors block cursor-pointer"
               style={{ maxWidth: "600px" }}
@@ -154,7 +155,7 @@ export default function FeaturedProjects() {
                   draggable={false}
                 />
               </div>
-            </a>
+            </Link>
             <div className="px-4 py-2 text-xl flex w-full justify-between">
               <h3 className="font-normal">{project.name}</h3>
               <span className="opacity-70">{project.period}</span>

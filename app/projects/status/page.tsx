@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Status() {
   return (
     <div className="min-h-screen px-[4vw] max-w-[50em] font-mono leading-relaxed cursor-crosshair selection:bg-black selection:text-white">
@@ -19,9 +21,9 @@ export default function Status() {
       </section>
 
       <footer className="my-[6vh]">
-        <a href="/" className="text-base font-normal hover:underline">
+        <Link href="/" className="text-base font-normal hover:underline">
           ← Back to home
-        </a>
+        </Link>
       </footer>
     </div>
   );
