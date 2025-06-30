@@ -142,7 +142,7 @@ export default function FeaturedProjects() {
         }}
       >
         {featuredProjects.map((project, index) => (
-          <div key={index} className="w-full max-w-[600px]">
+          <div key={index} className="w-full max-w-[600px] min-w-[240px]">
             {project.comingSoon ? (
               <div
                 className="flex-shrink-0 block cursor-default opacity-75"
