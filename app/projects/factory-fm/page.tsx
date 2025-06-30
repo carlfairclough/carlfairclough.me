@@ -24,30 +24,24 @@ export default function FactoryFM() {
           Strategy
         </h2>
         <p className="text-base font-normal mb-4">
-          I started from the belief that music-social had stagnated. Scenes were
-          fading, and the culture of gathering at venues had eroded—largely a
-          consequence of Live Nation's stranglehold on the live music ecosystem.
+          Music social had stagnated. Scenes were fading, venues felt corporate,
+          and Live Nation had squeezed the life out of live music culture.
         </p>
         <p className="text-base font-normal mb-4">
-          This project was part of a broader data-sharing protocol, and my
-          thesis was simple: by surfacing rich, high-signal, low-risk user data,
-          we could attract third parties to build truly personal,
+          The thesis was simple: surface information that people are actively
+          seeking to share, and third parties will build personal,
           community-driven experiences on top of it.
         </p>
         <p className="text-base font-normal mb-4">
-          There's a growing appetite for music social and intentional
-          consumption—the resurgence of vinyl, the rise of platforms like
-          Letterboxd—it's all pointing in the same direction.
+          The signs were everywhere. Vinyl sales up, Letterboxd thriving, people
+          talking about "doomscrolling" and "brainrot." Everyone wanted to
+          connect more deliberately, without algorithms deciding what they see.
         </p>
 
         <p className="text-base font-normal">
-          2024 was the right moment. Clear uptick in music influencers,
-          continued increase in vinyl consumption, and undercurrent of
-          dissatisfaction with Live Nation and Spotify from both artists and
-          fans. "Doomscrolling" and "brainrot" entered common language—creators
-          began publishing content about leading a more deliberate life without
-          algorithms, without endless feeds, instead connecting directly to
-          people.
+          2024 was the moment. Music influencers were having their breakout year
+          while both artists and fans were getting fed up with Spotify and Live
+          Nation. People wanted something different.
         </p>
       </section>
 
@@ -57,32 +51,34 @@ export default function FactoryFM() {
         </h2>
 
         <h3 className="text-lg font-normal mt-[2vw] mb-4 text-black mt-12">
-          Phase 1: Proof of Concept
+          Building the First Version
         </h3>
         <p className="text-base font-normal mb-4">
-          The first phase was a rapid POC built on-site with co-founders—rapid
-          prototyping, tight loops, no overhead. We jumped into a simple,
-          centralized stack: Next.js and Postgres. The goal was to demonstrate
-          that catalog data is available and can easily be consumed to build a
-          logging feature.
+          We built fast. Me and my co-founders locked ourselves in a room with
+          Next.js and Postgres. We wanted to left-curve this as hard as
+          possible, aiming to earn the privilege of problems that come with
+          scale, rather than optimize for them prematurely.
         </p>
 
         <p className="text-base font-normal mb-4">
-          We initially ingested data from a public API and developed a system to
-          cross-reference data from different providers for redundancy. The data
-          was stored lazily to manage costs and to allow us to attribute
-          artists/releases to the people who first found them on Factory.fm.
+          The first goal: prove you could actually review music without it being
+          painful. We pulled catalog data from public APIs, cross-referenced
+          everything for accuracy, and used the most simple, easy to scale
+          storage strategy—only storing what we needed, when we needed it. Plus
+          we could credit whoever discovered an artist or release first on
+          Factory.
         </p>
 
         <h3 className="text-lg font-normal mt-[2vw] mb-4 text-black mt-12">
-          Phase 2: Mobile-First MVP
+          Going Mobile-First
         </h3>
         <p className="text-base font-normal mb-4">
-          After proving the concept, we hired a team to build out a mobile-first
-          MVP. We brought on Shaun Church and Kaspar Pyyding to help reframe the
-          experience around mobile-first behaviors, both as senior Engineers to
-          help us build a stellar consumer app. The website was initially only
-          made available to a limited group using mobile web browsers.
+          Once we knew it worked, we brought in Shaun Church and Kaspar Pyyding
+          to help build something more refined, and more usable. But still as
+          lean as possible. We went mobile-web-only, because that's where people
+          listen to music and learn about artists. That's where activity is. We
+          kept it invite-only at first to keep things tight, and ensure we had
+          something worth all of the inevitable bug-fixes.
         </p>
       </section>
       <ImageGallery
@@ -132,46 +128,42 @@ export default function FactoryFM() {
       />
       <section className="px-[4vw] max-w-[50em]">
         <p className="text-base font-normal mb-4">
-          From there, we launched a closed beta to stress test social dynamics
-          and user intent.
+          We ran a closed beta to see how people actually used it.
         </p>
         <p className="text-base font-normal mb-4">
-          One key insight: friend feeds, while intimate, could appear stagnant
-          when overall content was light. To address this, we introduced an
-          "All" feed—not as a homepage, but as a proof of life. Interestingly,
-          many users leaned into the app more as a personal journaling tool than
-          a social one. We observed one user create a haiku every day for a
-          month, and other users onboard to "bomb" the public feed—K-Pop fans.
+          Friend feeds felt empty when there wasn't much content, so we added an
+          "All" feed: not as the main thing, but to prove there was an active
+          community and to help people understand what others were saying. It
+          helped to alleviate the anxiety of posting for new users. People
+          started using it like a music diary. One person wrote haikus every day
+          for a month. K-Pop fans joined to flood the public feed. It was
+          working, just not entirely in the ways we expected.
         </p>
         <h3 className="text-lg font-normal mt-[2vw] mb-4 text-black">
-          Phase 3: Desktop Expansion
+          Opening Up
         </h3>
         <p className="text-base font-normal mb-4">
-          After validating demand through our mobile-only web experience, and
-          receiving broad positive feedback, we opened the desktop version
-          publicly. This contained key strategic changes, such as making content
-          public by default, and allowing search engines to detect our reviews.
-          A core part of the content strategy was to meet popular releases
-          before the media and other social media did. By ranking highly, we
-          could become a forum for discussion.
+          People liked it, so we opened the web version publicly, with
+          breakpoints so that people could use it on desktop. It was
+          double-pronged: we wanted to let search engines find our reviews, and
+          for people to use it as a discovery tool <i>without</i> creating an
+          account. The plan: get to new releases before blogs and Reddit did.
+          Rank high in search, become the place where people talk about music.
         </p>
 
         <p className="text-base font-normal mb-4">
-          By January, we had 2,000 users and a record of 16,000 albums spanning
-          22,000 artists and 207,000 tracks—users could highlight specific
-          tracks from releases, not just full albums. By April, we had crossed
-          3,000 users.
+          By January: 2,000 users, 16,000 albums, 22,000 artists, 207,000
+          tracks. By April: 3,000 users.
         </p>
 
         <h3 className="text-lg font-normal text-red-600 mb-4 mt-[2vw]">
-          Growth Challenges & Pivots
+          The Growth Problem
         </h3>
         <p className="text-base font-normal mb-4">
-          Post-web release, growth appeared stagnant, but we recognized that
-          large social media pushes drove new users & activity. We had gigantic
-          spikes in users when influencers posted about us—these were the real
-          markers of growth, and demonstrated that retention was a huge
-          priority.
+          Growth stalled after launch. But when influencers posted about us,
+          we'd get massive spikes. That told us everything: we needed better
+          retention and better engagement in existing music-discussion venues,
+          not just more signups.
         </p>
       </section>
 
@@ -179,40 +171,37 @@ export default function FactoryFM() {
       <section className="px-[4vw] max-w-[50em]">
         <p className="text-base font-normal mb-4">
           <span className="text-red-600">
-            We had saturated our personal audiences and needed to move further.
+            We'd maxed out our personal networks.
           </span>{" "}
-          We found that people arrived, logged a release, then didn't return. We
-          began running scheduled content on social media, social features for
-          sharing logs (OG images, Instagram cards), and ads for people
-          searching for specific labels and releases.
+          People would sign up, log one album, then disappear. We tried social
+          media content, sharing features, even ads targeting specific labels
+          and releases.
         </p>
 
         <p className="text-base font-normal mb-4">
-          However, one critical component was this: we had attracted users by
-          displaying an alternative to AI "slop", we had allowed users to
-          preserve their privacy by signing in with wallets, and we had taken a
-          vocal stance against advertising. Because of this, re-engaging users
-          via email campaigns was out of the question. We needed to go further
-          and engage people where they were listening: on their phones, as a
-          native companion app to their existing DSP.
+          But we'd positioned ourselves as the anti-AI, anti-ads alternative to
+          Spotify and their ilk. People signed in with wallets, we didn't do
+          advertising. We couldn't email those users even if they wanted us to.
+          Still, email campaigns felt deceptive. We needed to meet people where
+          they actually listen to music: on their phones, and embed ourselves
+          into the listening experience. If a user listened to an album twice in
+          a row, or always listens to the same thing while driving, they should
+          think of Factory. It needed to strongly position itself as the place
+          to go and describe exactly certain albums tick boxes.
         </p>
 
         <h3 className="text-lg font-normal mt-[2vw] mb-4 text-black">
-          Phase 4: Native App Release
+          Going Native
         </h3>
         <p className="text-base font-normal mb-4">
-          We launched an iOS app with full feature parity and began work on
-          Android. That release also marked the rollout of reporting and
-          moderation tools—lightweight but necessary to scale trust. This
-          validation led us to refine the entire experience focusing on
-          mobile-first behaviors and optimizing the core user flows that drove
-          the most engagement.
+          We launched the iOS & Android apps simultaneously with everything the
+          web version had, plus nice little shortcuts for power users. We added
+          basic moderation tools—nothing fancy, but enough to keep things clean
+          as we grew.
         </p>
         <p className="text-base font-normal mb-4">
-          We identified how much people valued the website through user feedback
-          and engagement patterns. Example tweets and social mentions showed
-          genuine enthusiasm for the platform's approach to music discovery and
-          community building.
+          The response showed we were onto something. People genuinely loved
+          what we were building.
         </p>
       </section>
       <TweetCarousel>
@@ -349,27 +338,25 @@ export default function FactoryFM() {
           Outcome
         </h2>
         <p className="text-base font-normal mb-4">
-          Our wedge was deliberately carved between existing incumbents: we
-          wouldn't touch music playback (avoiding label hostility), we wouldn't
-          have the complexity of Discogs (for fans, not collectors), and we
-          wouldn't focus on data tracking like Last.fm. Factory was a place to
-          connect with friends and fans, not compete with stats.
+          We carved out our space carefully: no music playback (major labels
+          would shut us down), no collector complexity like Discogs, no stat
+          obsession like Last.fm. Just a place to connect over music you
+          actually care about.
         </p>
 
         <p className="text-base font-normal mb-4">
-          Factory was a loss-leader for the wider data-sharing vision, helping
-          us raise roughly [REDACTED] at [REDACTED] valuation. From early 2025,
-          focus shifted heavily to that broader protocol. Factory hit the back
-          burner—we had hoped it could become a source of data for other
-          music/social websites within our network.
+          Factory helped us raise [REDACTED] at a [REDACTED] valuation for our
+          bigger data-sharing vision. By early 2025, we shifted focus to that
+          broader protocol. Factory became the back burner—still valuable as a
+          data source for other music platforms in our network.
         </p>
 
         <p className="text-base font-normal">
-          The technical choices—Next.js for hiring flexibility, Postgres via
-          Supabase for easy egress—enabled rapid iteration without hiring
-          backend or devops teams. Both Kaspar and Shaun could rapidly develop
-          an API during native app builds, creating modular layers that could be
-          broken out if needed.
+          The tech choices paid off. Next.js meant we could hire easily.
+          Postgres through Supabase meant no vendor lock-in. Kaspar and Shaun
+          could build APIs fast without us needing a whole backend team.
+          Everything stayed modular and so simple that it felt impossible to
+          fail.
         </p>
       </section>
     </div>
