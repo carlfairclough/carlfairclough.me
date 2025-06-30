@@ -89,6 +89,24 @@ const collaborators: Collaborator[] = [
       "https://media.licdn.com/dms/image/v2/C4E03AQHCE34Jd4oKKg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1547476089562?e=1756944000&v=beta&t=3bUymWjtu-2J_EeTSCZIbKVzjkKGpaB3KtdYjCTQ67I",
     url: "https://www.linkedin.com/in/mlockwitz/",
   },
+  {
+    name: "Gary Bury",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4D03AQHWvByHMhAg3g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1584031326708?e=1756944000&v=beta&t=9WLShxsc9l2LXKXiWM2KQAnHLUFR9GDhjoT2dVsU7XY",
+    url: "https://www.linkedin.com/in/garybury/",
+  },
+  {
+    name: "Martin Steel",
+    image:
+      "https://pbs.twimg.com/profile_images/917062942780198912/UdO16sQZ_400x400.jpg",
+    url: "https://x.com/martin_steel",
+  },
+  {
+    name: "James Stiff",
+    image:
+      "https://mir-s3-cdn-cf.behance.net/user/115/152d0487530.64b6523c51413.png",
+    url: "https://www.behance.net/jamesstiff",
+  },
 ];
 
 export default function Collaborators() {
@@ -96,8 +114,8 @@ export default function Collaborators() {
     <section className="mb-[16vh] pt-[8vh] text-lg">
       <h2 className="font-normal mb-4">Collaborators</h2>
       <p className="text-slate-700 mb-4">
-        Some of the best leaders & team-members I've had the pleasure of working
-        with:
+        Some of the best leaders & team-members I've had the pleasure of
+        collaborating with:
       </p>
       <div className="flex flex-wrap gap-3 my-4 text-sm">
         {collaborators.map((collaborator, index) => (

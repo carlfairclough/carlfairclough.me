@@ -106,9 +106,9 @@ export default function ProjectHistory() {
         {projectHistory.map((item, index) => (
           <li
             key={index}
-            className="py-1 border-b border-dashed border-slate-200 flex justify-between"
+            className="py-1 border-b border-dashed border-slate-200 lg:flex justify-between list-none"
           >
-            <span>{item.company}</span>{" "}
+            <span>{item.company}</span> <br className="lg:hidden" />
             <span className="opacity-70">{item.role}</span>
           </li>
         ))}
