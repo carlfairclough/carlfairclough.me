@@ -114,8 +114,8 @@ export default function Collaborators() {
     <section className="mb-[16vh] pt-[8vh] text-lg">
       <h2 className="font-normal mb-4">Collaborators</h2>
       <p className="text-slate-700 mb-4">
-        Some of the best leaders & team-members I've had the pleasure of
-        collaborating with:
+        Some of the best leaders & team-members I've had the pleasure of working
+        with (and of course, for):
       </p>
       <div className="flex flex-wrap gap-3 my-4 text-sm">
         {collaborators.map((collaborator, index) => (
