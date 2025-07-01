@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function FactoryFM() {
   return (
     <div className="min-h-screen font-mono leading-relaxed cursor-crosshair selection:bg-black selection:text-white text-slate-700">
-      <header className="my-[6vh] px-[4vw] max-w-[50em]">
+      <header className="mb-[6vh] px-[4vw] max-w-[50em]">
         <h1 className="text-[1.6em] font-normal text-black">
           Factory.fm
           <span className="opacity-70 text-base block">2024-2025</span>

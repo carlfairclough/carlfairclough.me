@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function EthereumOrg() {
   return (
     <div className="min-h-screen leading-relaxed selection:bg-black selection:text-white text-slate-700">
-      <header className="my-[6vh] max-w-[50em] px-[4vw]">
+      <header className="mb-[6vh] max-w-[50em] px-[4vw]">
         <h1 className="text-[1.6em] font-normal text-black">
           Ethereum.org
           <span className="opacity-70 text-base block">2019-2020</span>
