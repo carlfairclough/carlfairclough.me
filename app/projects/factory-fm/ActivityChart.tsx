@@ -21,7 +21,7 @@ export default function ActivityChart() {
 
           {/* Y-axis labels */}
           <g fontSize="14" fill="#9ca3af" textAnchor="end">
-            <text x="55" y="355">
+            {/* <text x="55" y="355">
               0
             </text>
             <text x="55" y="285">
@@ -35,7 +35,7 @@ export default function ActivityChart() {
             </text>
             <text x="55" y="75">
               400+
-            </text>
+            </text> */}
           </g>
 
           {/* X-axis labels */}
@@ -134,22 +134,6 @@ export default function ActivityChart() {
           <circle cx="1080" cy="62" r="4" fill="#ef4444" />
           <circle cx="928" cy="125" r="4" fill="#ef4444" />
 
-          {/* Milestone labels */}
-          <g fontSize="12" fill="#ef4444">
-            <text x="317" y="175" textAnchor="start">
-              301
-            </text>
-            <text x="197" y="135" textAnchor="start">
-              130
-            </text>
-            <text x="1085" y="57" textAnchor="start">
-              444
-            </text>
-            <text x="933" y="120" textAnchor="start">
-              314
-            </text>
-          </g>
-
           {/* Legend */}
           <g fontSize="12" fill="#9ca3af">
             <line
@@ -177,7 +161,7 @@ export default function ActivityChart() {
           </g>
         </svg>
         <div className="mt-8 gap-8 flex flex-col">
-          <div>
+          {/* <div>
             <div className="text-2xl font-normal text-black">10,190</div>
             <div className="text-sm text-gray-600">Total Reviews</div>
           </div>
@@ -188,7 +172,7 @@ export default function ActivityChart() {
           <div>
             <div className="text-2xl font-normal text-black">1,110</div>
             <div className="text-sm text-gray-600">Peak Week</div>
-          </div>
+          </div> */}
         </div>
       </div>
       <p className="text-sm opacity-70 mt-4 text-gray-700">
