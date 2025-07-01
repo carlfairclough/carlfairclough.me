@@ -1,5 +1,4 @@
 import ImageGallery from "@/app/components/ImageGallery";
-import Link from "next/link";
 
 export default function EthereumOrg() {
   return (
@@ -67,6 +66,7 @@ export default function EthereumOrg() {
         <img
           src="/projects/ethereum/ethereumorg-july-2019.png"
           className="border border-slate-200 mb-4"
+          alt="Ethereum.org website screenshot from July 2019 showing the previous design"
         />
         <p className="text-base font-normal">
           They needed someone to build something simple: a design system where

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Disco() {
   return (
     <div className="min-h-screen px-[4vw] max-w-[50em] font-mono leading-relaxed cursor-crosshair selection:bg-black selection:text-white">

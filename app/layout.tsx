@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
 import { Nav } from "./components/Nav";
-import { BackBar } from "./components/BackBar";
 
 export const metadata: Metadata = {
   title: "Carl Fairclough: Product Designer & Engineer",

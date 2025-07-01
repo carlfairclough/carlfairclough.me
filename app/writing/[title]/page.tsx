@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { posts } from "./posts";
 
 export async function generateStaticParams() {
@@ -11,7 +10,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { title: string };
+  params: Promise<{ title: string }>;
 }) {
   const { title } = await params;
   const post = posts.find((p) => p.slug === title);
@@ -75,7 +74,7 @@ export async function generateMetadata({
 export default async function PostPage({
   params,
 }: {
-  params: { title: string };
+  params: Promise<{ title: string }>;
 }) {
   const { title } = await params;
   const post = posts.find((p) => p.slug === title);

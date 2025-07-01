@@ -9,7 +9,6 @@ interface TweetCarouselProps {
 
 export default function TweetCarousel({ children }: TweetCarouselProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isDragging, setIsDragging] = useState(false);
   const [scriptLoaded, setScriptLoaded] = useState(false);
 
   useEffect(() => {
@@ -76,9 +75,7 @@ export default function TweetCarousel({ children }: TweetCarouselProps) {
       <ScrollContainer
         className="flex gap-4 px-[4vw] cursor-grab overflow-x-hidden"
         innerRef={containerRef}
-        onStartScroll={() => setIsDragging(true)}
         onEndScroll={() => {
-          setIsDragging(false);
           setTimeout(handleEndScroll, 100);
         }}
       >

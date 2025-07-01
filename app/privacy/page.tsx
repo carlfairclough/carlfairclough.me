@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { BackBar } from "../components/BackBar";
 
 export default function Privacy() {

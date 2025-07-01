@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Collaborators from "./components/Collaborators";
 import Projects from "./components/Projects";
 
@@ -6,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen leading-relaxed cursor-crosshair selection:bg-black selection:text-white">
       <header className="py-[15vh] px-[4vw] max-w-[50em] ">
-        <img src="/portrait.png" width="80" className="-mx-4" />
+        <img src="/portrait.png" width="80" className="-mx-4" alt="Carl Fairclough's portrait" />
         <h1 className="text-[1.6em] font-normal">
           Carl Fairclough{" "}
           <span className="opacity-70">is a Product Designer & Engineer</span>

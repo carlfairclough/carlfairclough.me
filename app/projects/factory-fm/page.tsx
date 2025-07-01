@@ -1,8 +1,6 @@
 import ActivityChart from "./ActivityChart";
 import TweetCarousel from "./TweetCarousel";
 import ImageGallery from "../../components/ImageGallery";
-import FullWidthBanner from "../../components/FullWidthBanner";
-import Link from "next/link";
 
 export default function FactoryFM() {
   return (
@@ -208,7 +206,7 @@ export default function FactoryFM() {
         <blockquote
           className="twitter-tweet block w-80 flex-shrink-0"
           data-dnt="true"
-          //@ts-expect-error
+          //@ts-expect-error - Twitter blockquote align prop is not in React types
           align="left"
         >
           <p lang="en" dir="ltr">
@@ -222,7 +220,7 @@ export default function FactoryFM() {
         <blockquote
           className="twitter-tweet block w-80 flex-shrink-0"
           data-dnt="true"
-          //@ts-expect-error
+          //@ts-expect-error - Twitter blockquote align prop is not in React types
           align="left"
         >
           <p lang="en" dir="ltr">
@@ -236,7 +234,7 @@ export default function FactoryFM() {
         <blockquote
           className="twitter-tweet block w-80 flex-shrink-0"
           data-dnt="true"
-          //@ts-expect-error
+          //@ts-expect-error - Twitter blockquote align prop is not in React types
           align="left"
         >
           <p lang="en" dir="ltr">
@@ -250,7 +248,7 @@ export default function FactoryFM() {
         <blockquote
           className="twitter-tweet block w-80 flex-shrink-0"
           data-dnt="true"
-          //@ts-expect-error
+          //@ts-expect-error - Twitter blockquote align prop is not in React types
           align="left"
         >
           <p lang="en" dir="ltr">
@@ -264,7 +262,7 @@ export default function FactoryFM() {
         <blockquote
           className="twitter-tweet block w-80 flex-shrink-0"
           data-dnt="true"
-          //@ts-expect-error
+          //@ts-expect-error - Twitter blockquote align prop is not in React types
           align="left"
         >
           <p lang="en" dir="ltr">
@@ -278,7 +276,7 @@ export default function FactoryFM() {
         <blockquote
           className="twitter-tweet block w-80 flex-shrink-0"
           data-dnt="true"
-          //@ts-expect-error
+          //@ts-expect-error - Twitter blockquote align prop is not in React types
           align="left"
         >
           <p lang="en" dir="ltr">
@@ -292,7 +290,7 @@ export default function FactoryFM() {
         <blockquote
           className="twitter-tweet block w-80 flex-shrink-0"
           data-dnt="true"
-          //@ts-expect-error
+          //@ts-expect-error - Twitter blockquote align prop is not in React types
           align="left"
         >
           <p lang="en" dir="ltr">
