@@ -6,6 +6,11 @@ interface Collaborator {
 
 const collaborators: Collaborator[] = [
   {
+    name: "Masha Healy",
+    image: 'https://pbs.twimg.com/profile_images/1537281964071432192/Gfl8txYt_400x400.jpg',
+    url: 'https://x.com/MashaHealy'
+  },
+  {
     name: "Hester Bruikman",
     image:
       "https://media.licdn.com/dms/image/v2/C4D03AQGmElTLPDtCtg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1547993210092?e=1756339200&v=beta&t=e7SefvMfMAcnjnT60KEiqh0uGomYxJ1VCqUPPR8l1FM",
