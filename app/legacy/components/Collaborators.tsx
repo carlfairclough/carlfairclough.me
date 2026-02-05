@@ -4,11 +4,12 @@ interface Collaborator {
   url: string;
 }
 
-const collaborators: Collaborator[] = [
+export const collaborators: Collaborator[] = [
   {
     name: "Masha Healy",
-    image: 'https://pbs.twimg.com/profile_images/1537281964071432192/Gfl8txYt_400x400.jpg',
-    url: 'https://x.com/MashaHealy'
+    image:
+      "https://pbs.twimg.com/profile_images/1537281964071432192/Gfl8txYt_400x400.jpg",
+    url: "https://x.com/MashaHealy",
   },
   {
     name: "Hester Bruikman",
@@ -68,7 +69,7 @@ const collaborators: Collaborator[] = [
     name: "Ryan Cordell",
     image:
       "https://pbs.twimg.com/profile_images/1801242626064023553/VmH8lQQB_400x400.jpg",
-    url: "https://x.com/cordellcreatescopy",
+    url: "https://www.linkedin.com/in/ryancordell1/",
   },
   {
     name: "Zach Herring",

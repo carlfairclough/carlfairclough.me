@@ -1,4 +1,4 @@
-import { BackBar } from "../components/BackBar";
+import { BackBar } from "../legacy/components/BackBar";
 
 export default function WritingLayout({
   children,

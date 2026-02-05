@@ -1,4 +1,4 @@
-import ImageGallery from "@/app/components/ImageGallery";
+import ImageGallery from "@/app/legacy/components/ImageGallery";
 
 export default function EthereumOrg() {
   return (
