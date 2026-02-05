@@ -14,7 +14,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased relative`}>{children}</body>
+      <body
+        className="antialiased relative"
+        style={{
+          fontFamily:
+            '"Helvetica Neue", Helvetica, Arial, "Nimbus Sans", sans-serif',
+        }}
+      >
+        {children}
+      </body>
     </html>
   );
 }

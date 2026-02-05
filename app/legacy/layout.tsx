@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+// import "./globals.css";
 import Link from "next/link";
 import { Nav } from "../legacy/components/Nav";
 
