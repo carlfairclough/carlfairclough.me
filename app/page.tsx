@@ -169,6 +169,7 @@ const projects: Item[] = [
     url: "https://en.wikipedia.org/wiki/The_Coca-Cola_Company",
   },
   { name: "ConsenSys", url: "https://en.wikipedia.org/wiki/ConsenSys" },
+  { name: "MakerDAO", url: "https://en.wikipedia.org/wiki/MakerDAO" },
   {
     name: "Smart Dubai",
     url: "https://www.wsj.com/articles/dubai-aims-to-be-a-city-built-on-blockchain-1493086080",
