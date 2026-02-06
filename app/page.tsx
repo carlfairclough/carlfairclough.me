@@ -65,6 +65,7 @@ export default function Home() {
         <p className="flex justify-start items-baseline">Carl Fairclough </p>
         <p>
           <Link href="mailto:hi@carl.fyi">Email</Link>,{" "}
+          <Link href="https://www.linkedin.com/in/carl-fairclough/">LinkedIn</Link>,{" "}
           <Link href="https://x.com/carlfairclough">X</Link>
         </p>
       </header>
