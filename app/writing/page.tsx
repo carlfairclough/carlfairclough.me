@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Writing",
+  description:
+    "Thoughts on product design, Web3, music, and building things that matter.",
+};
 
 const posts = [
   {

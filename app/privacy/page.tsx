@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { BackBar } from "../legacy/components/BackBar";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "How carl.fyi handles analytics, cookies, and your data.",
+};
 
 export default function Privacy() {
   return (

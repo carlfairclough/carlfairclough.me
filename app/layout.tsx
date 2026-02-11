@@ -4,9 +4,21 @@ import { Analytics } from "@vercel/analytics/next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Carl Fairclough: Product Designer & Engineer",
+  metadataBase: new URL("https://carl.fyi"),
+  title: {
+    default: "Carl Fairclough: Product Designer & Engineer",
+    template: "%s — Carl Fairclough",
+  },
   description:
     "Designing meaningful experiences and shipping products that matter",
+  openGraph: {
+    siteName: "Carl Fairclough",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+  },
 };
 
 export default function RootLayout({
