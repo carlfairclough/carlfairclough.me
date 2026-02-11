@@ -1,25 +1,23 @@
-import type { MDXComponents } from 'mdx/types'
+import type { MDXComponents } from "mdx/types";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    h1: ({ children }) => (
-      <h1 className="text-xl font-normal mt-[2vw] mb-4 text-black">{children}</h1>
+    PostHeader: ({ title, date }: { title: string; date: string }) => (
+      <section className="w-full border-b px-2 text-3xl md:text-5xl leading-[1em] gap-x-[0.5ch] py-[1em]">
+        <h1 className="max-w-[45ch] text-3xl md:text-5xl leading-[1em] text-balance">
+          {title}
+        </h1>
+        <time className="text-blue-800/40">{date}</time>
+      </section>
     ),
-    h2: ({ children }) => (
-      <h2 className="text-xl font-normal mt-[2vw] mb-4 text-black">{children}</h2>
+    wrapper: ({ children }) => (
+      <article className="w-full text-3xl flex flex-col gap-[1em]">
+        {children}
+      </article>
     ),
-    h3: ({ children }) => (
-      <h3 className="text-lg font-normal mt-[2vw] mb-4 text-black">{children}</h3>
-    ),
-    p: ({ children }) => (
-      <p className="text-base font-normal mb-4">{children}</p>
-    ),
-    ul: ({ children }) => (
-      <ul className="text-base font-normal mb-4 list-disc ml-6">{children}</ul>
-    ),
-    li: ({ children }) => (
-      <li>{children}</li>
-    ),
+    p: ({ children }) => <p className="max-w-[45ch] px-2">{children}</p>,
+    h2: ({ children }) => <h2 className="text-black px-2">{children}</h2>,
+    hr: () => <hr className="border-blue-800/20 w-full" />,
     ...components,
-  }
+  };
 }
