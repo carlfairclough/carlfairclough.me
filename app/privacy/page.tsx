@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "How carl.fyi handles analytics, cookies, and your data.",
+  openGraph: {
+    images: ["/og?title=Privacy Policy"],
+  },
 };
 
 export default function Privacy() {

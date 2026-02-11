@@ -15,9 +15,16 @@ export const metadata: Metadata = {
     siteName: "Carl Fairclough",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og?title=Carl Fairclough&subtitle=Product Designer %26 Engineer",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
   },
 };
 

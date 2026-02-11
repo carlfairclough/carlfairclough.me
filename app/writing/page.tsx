@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Writing",
   description:
     "Thoughts on product design, Web3, music, and building things that matter.",
+  openGraph: {
+    images: ["/og?title=Writing&subtitle=Thoughts on design, Web3, music, and building things that matter"],
+  },
 };
 
 const posts = [
