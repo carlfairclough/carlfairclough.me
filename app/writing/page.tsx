@@ -6,7 +6,9 @@ export const metadata: Metadata = {
   description:
     "Thoughts on product design, Web3, music, and building things that matter.",
   openGraph: {
-    images: ["/og?title=Writing&subtitle=Thoughts on design, Web3, music, and building things that matter"],
+    images: [
+      "/og?title=Writing&subtitle=Thoughts on design, Web3, music, and building things that matter",
+    ],
   },
 };
 
@@ -17,24 +19,24 @@ const posts = [
     date: "February 2026",
     wordCount: 870,
   },
-  {
-    slug: "broken-incentive-machine",
-    title: "Web3's Broken Incentive Machine",
-    date: "1 July 2025",
-    wordCount: 2118,
-  },
+  //   {
+  //     slug: "broken-incentive-machine",
+  //     title: "Web3's Broken Incentive Machine",
+  //     date: "1 July 2025",
+  //     wordCount: 2118,
+  //   },
   {
     slug: "on-factory",
     title: "On Factory",
     date: "30 August 2024",
     wordCount: 624,
   },
-  {
-    slug: "account-abstraction",
-    title: "The Centralization Vector Disguised as User Experience",
-    date: "16 September 2023",
-    wordCount: 1668,
-  },
+  //   {
+  //     slug: "account-abstraction",
+  //     title: "The Centralization Vector Disguised as User Experience",
+  //     date: "16 September 2023",
+  //     wordCount: 1668,
+  //   },
 ];
 
 export default function WritingIndex() {
