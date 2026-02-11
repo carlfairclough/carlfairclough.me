@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
+import { logoDataUri } from "../components/logo-data";
 
 export const runtime = "edge";
 
@@ -12,7 +13,6 @@ export async function GET(req: NextRequest) {
   ]);
 
   const title = searchParams.get("title") || "Carl Fairclough";
-  const subtitle = searchParams.get("subtitle") || "";
 
   return new ImageResponse(
     <div
@@ -39,21 +39,19 @@ export async function GET(req: NextRequest) {
       <div
         style={{
           inset: "16px",
-          fontSize: 68,
+          fontSize: 48,
           lineHeight: 1.1,
           color: "#1e40af",
           letterSpacing: "-0.02em",
           borderBottom: "2px solid #1e40af",
-          padding: "0 16px",
+          padding: "8px 16px",
           display: "flex",
           justifyContent: "space-between",
         }}
       >
         <div>Carl Fairclough</div>
-        <div>{subtitle}</div>
+        <div>Writing</div>
       </div>
-
-      {/* Center: title + subtitle */}
       <div
         style={{
           display: "flex",
@@ -64,7 +62,7 @@ export async function GET(req: NextRequest) {
       >
         <div
           style={{
-            fontSize: 68,
+            fontSize: 96,
             color: "#1e40af",
             lineHeight: 1.1,
             maxWidth: "1000px",
@@ -76,6 +74,14 @@ export async function GET(req: NextRequest) {
         >
           {title}
         </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        {/* <img
+          src={logoDataUri}
+          width={1600}
+          height={400}
+          alt=""
+          style={{ fill: "#1e40af" }}
+        /> */}
       </div>
     </div>,
     {
