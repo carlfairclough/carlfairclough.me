@@ -1,6 +1,5 @@
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
-import { logoDataUri } from "../components/logo-data";
 
 export const runtime = "edge";
 
@@ -68,20 +67,13 @@ export async function GET(req: NextRequest) {
             maxWidth: "1000px",
             letterSpacing: "-0.02em",
             marginTop: "auto",
+            marginBottom: "96px",
 
             padding: "16px",
           }}
         >
           {title}
         </div>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        {/* <img
-          src={logoDataUri}
-          width={1600}
-          height={400}
-          alt=""
-          style={{ fill: "#1e40af" }}
-        /> */}
       </div>
     </div>,
     {
